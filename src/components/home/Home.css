@@ -1,0 +1,224 @@
+/*HomeDisplay*/
+.home_back{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url('http://www.huevosorganicos.com/wp-content/uploads/2016/08/huevos-organicos.jpg');
+}
+.cover{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.3);
+}
+.home_back h1{
+    font-size: 40px;
+    margin-top: 20%;
+    color:white;
+}
+.home_back p{
+    font-size: 20px;
+    color:white;
+
+}
+
+
+/*About*/
+#about{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:500px;
+}
+.about{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+}
+.titulo{
+    font-size: 30px;
+}
+.texto{
+    font-size: 18px;
+}
+
+/*Destacados*/
+.destacados{
+    background-color: #f3f3f3;
+
+    padding: 50px 0;
+}
+.destacados h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cat{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width:300px;
+    height:220px;
+    margin: 10px;
+    position: relative;
+    cursor:pointer;
+    transition: all .5s ease;
+}
+.img_card{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.img_card img{
+    width:100%;
+    height:auto;
+    filter: blur(0px);
+    transition: all .5s ease;
+}
+.card span{
+    position: absolute;
+    bottom:20px;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: all .5s ease;
+}
+.card p{
+   color:transparent;
+    position: absolute;
+    bottom: 0;
+    left:15px;
+    transition: all .5s ease;
+}
+.card:hover img{
+    filter: blur(2px);
+    transform: scale(1.2);
+}
+.card:hover span{
+    bottom: 40px;
+}
+.card:hover p{
+    display: inline-block;
+    bottom: 20px;
+    color:inherit;
+}
+
+/*Publi*/
+.publi{
+    background-image:url('https://images.pexels.com/photos/48817/jam-preparations-jars-fruit-48817.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
+    height:350px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.publi h2{
+    color:white;
+    font-size: 250%;
+    margin-top: 10%;
+}
+.btn{
+    margin-top: 20px;
+    width:100px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    background-color: transparent;
+    color:white;
+    cursor:pointer;
+}
+.btn:hover{
+    transition: all 1s ease;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/*Info*/
+.info_text{
+    width:70%;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: justify;
+}
+.info{
+    height:1200px;
+}
+.info h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.info_img{
+    position: relative;
+    margin-top: 50px;
+}
+.img_uno{
+    width:500px;
+    position: absolute;
+    left: 8%;
+}
+.img_dos{
+    width:500px;
+    position: absolute;
+    top:330px;
+    right:8%;
+}
+/*Seller*/
+.seller{
+    margin-top: 50px;
+}
+.clip{
+    background-color:   rgb(250, 246, 228);
+    height:500px;
+    -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+}
+.flex{
+    padding-top: 150px;
+    margin: 0 auto;
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box_flex{
+    flex-grow: 1;
+    width:300px;
+}
+
+/*Revista*/
+.rev_fl{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #616161;
+}
+.box_rev{
+    flex-grow: 1;
+    width: 500px;
+}
+.rev_img{
+    width:100%;
+    height:400px;
+    background-image: url('http://bioplaza.org/bioplaza/wp-content/uploads/2012/06/Timeline-Facebook.jpg-851x321.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.rev_text{
+    padding: 0 20px;
+}
+.parrafo, .title{
+    color:white;
+    font-size: 160%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}

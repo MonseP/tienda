@@ -1,0 +1,37 @@
+.encabezado{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    border-bottom:1px solid #f7f7f7 ;
+    margin-bottom: 30px;
+}
+.fl{
+    width:90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.card{
+    width:300px;
+    height:200px;
+    flex-grow: 1;
+    margin: 10px;
+    background-color: green;
+}
+.search{
+    border:1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 2px 5px;
+    color:#E0E0E0;
+}
+.icon_search{
+    color:#BDBDBD;
+    margin: 0 5px;
+    font-size: 38px;
+    cursor:pointer;
+}

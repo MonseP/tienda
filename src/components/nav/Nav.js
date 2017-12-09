@@ -3,9 +3,22 @@ import './Nav.css';
 import {Link} from 'react-router-dom';
 
 class Nav extends Component {
+    componentWillMount(){
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = (event) => {
+    if(window.scrollY > 700){
+        var elemento = document.getElementById("navbar");
+        elemento.className += " color";
+
+        }
+    };
+
     render() {
+
         return (
-            <div className="nav">
+            <div id='navbar' className="nav">
                 <div className="img_logo">
                    <Link to="/" >
                         <span>Logo</span>

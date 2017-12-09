@@ -4,6 +4,7 @@ import Home from './components/home/Home';
 import Product from './components/product/Product';
 import Login from './components/login/Login';
 import Perfil from './components/perfil/Perfil';
+import {ProductDetailDisplay} from './components/product/ProductDetailDisplay';
 import Contacto from './components/contacto/Contacto';
 
 export const Routes = () => (
@@ -13,6 +14,7 @@ export const Routes = () => (
         <Route exact path="/login" component={Login}/>
         <Route exact path="/perfil" component={Perfil}/>
         <Route exact path="/contacto" component={Contacto}/>
+        <Route path="/detail" component={ProductDetailDisplay} />
         <Route render={() => <h2>Aqui  no</h2>} />
 
     </Switch>

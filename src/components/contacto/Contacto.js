@@ -1,3 +1,14 @@
-/**
- * Created by brendaortega on 02/12/17.
- */
+import React, { Component } from 'react';
+import {ContactoDisplay} from './ContactoDisplay';
+
+class Contacto extends Component {
+    render() {
+        return (
+            <div>
+                <ContactoDisplay />
+            </div>
+        );
+    }
+}
+
+export default Contacto;

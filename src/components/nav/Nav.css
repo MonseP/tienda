@@ -9,10 +9,15 @@
 }
 .nav{
     width:100%;
-    display: block;
-    height:60px;
-    color:white;
+    height:50px;
+    position: fixed;
+    z-index: 999;
+    font-family: 'Montserrat', sans-serif;
 
+}
+.color{
+    background-color: white;
+    border-bottom: 1px solid #f7f7f7 ;
 }
 .nav a{
     text-decoration: none;

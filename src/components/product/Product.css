@@ -1,19 +1,38 @@
+.productos{
+
+}
+.box_navbar{
+    height:50px;
+    width:100%;
+    background-color: white;
+    border-bottom:1px solid #f7f7f7 ;
+    color:inherit !important;
+
+}
+.fijo{
+    width:100%;
+    height:130px;
+    background-color: white;
+    position: fixed;
+    z-index:888;
+
+}
 .encabezado{
     width:80%;
-    margin: 0 auto;
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height:80px;
     border-bottom:1px solid #f7f7f7 ;
-    margin-bottom: 30px;
+
 }
 .fl{
     width:90%;
-    margin: 0 auto;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
-
+    padding-top: 130px;
 
 }
 .card{
@@ -24,6 +43,7 @@
     background-color: green;
 }
 .search{
+    width: 200px;
     border:1px solid #E0E0E0;
     border-radius: 10px;
     padding: 2px 5px;
@@ -34,4 +54,82 @@
     margin: 0 5px;
     font-size: 38px;
     cursor:pointer;
+}
+
+/*Detail*/
+.detalle{
+    height:100vh;
+}
+.box_detail {
+    padding-top: 50px;
+}
+.detail{
+    padding-top: 50px;
+    display: flex;
+    width:80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+
+    border-top:1px solid #f7f7f7 ;
+}
+.img_product{
+    width:600px;
+    flex-grow: 2;
+}
+.box_im {
+    width:80%;
+    margin: 0 auto;
+    height:370px;
+    overflow: hidden;
+}
+.box_im img{
+    width:100%;
+    height:auto;
+}
+.box_mini_img{
+    width:80%;
+    height:80px;
+    overflow: hidden;
+    margin:0 auto;
+    display: flex;
+}
+.box_mini_img img{
+    width:80px;
+    flex-grow: 1;
+    height:auto;
+    margin: 0 5px;
+}
+.descript_product{
+    width:300px;
+    flex-grow: 1;
+    padding:  1% 2%;
+    text-align: center;
+}
+.descript_name{
+    line-height:1.4;
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+.descript_data{
+    color:#656565;
+    font-size: .8rem;
+
+}
+.descript_price{
+    font-size: 1.5rem;
+}
+.box_price{
+    margin-top: 20px;
+    padding: 2%;
+    border-top:1px solid #f7f7f7  ;
+    border-bottom:1px solid #f7f7f7  ;
+}
+.btn_agregar{
+    width:150px;
+    padding: 6px 4px;
+    color:white;
+    background-color: #00a2ae;
+    border:none;
+    margin-top: 20px;
 }

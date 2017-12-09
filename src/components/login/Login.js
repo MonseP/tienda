@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import Nav from '../nav/Nav';
 import './Login.css';
 
 class Login extends Component {
     render() {
         return (
             <div className="login">
+                <div className="box_navbar" style={{color:"black"}}>
+                    <Nav />
+                </div>
                 <div className="card_login">
                     <h3>Iniciar sesión</h3>
                     <div className="redes_login">

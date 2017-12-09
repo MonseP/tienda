@@ -23,7 +23,7 @@ class Footer extends Component {
                 <div className="footer_section">
                     <p>About</p>
                     <p>Contact</p>
-                    <p>Privacity</p>
+                    <p>Administrador</p>
                     <p>Derechos Reservados</p>
                 </div>
             </div>

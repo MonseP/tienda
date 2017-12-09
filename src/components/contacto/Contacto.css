@@ -1,7 +1,7 @@
 .contacto_img{
     width:100%;
-    height:400px;
-    color:white;
+    height:450px;
+
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-position: center;
@@ -15,12 +15,13 @@
 }
 .contacto_img p{
     font-size: 15px;
+    color:white;
 }
 .datos_contacto{
     display: flex;
     flex-wrap: wrap;
     width:80%;
-    margin: 7% auto;
+    margin: 5% auto;
 }
 .phone, .adress, .service{
     width:300px;

@@ -9,7 +9,7 @@ export const ContactoDisplay = () => {
     return (
             <div className="contacto">
                 <div className="contacto_img">
-                    <div id="cubrir" className="cover">
+                    <div  className="cover">
                         <Nav />
                         <h2>Contactanos</h2>
                         <p>Te responderemos lo antes posible</p>

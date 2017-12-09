@@ -6,15 +6,17 @@ import Login from './components/login/Login';
 import Perfil from './components/perfil/Perfil';
 import {ProductDetailDisplay} from './components/product/ProductDetailDisplay';
 import Contacto from './components/contacto/Contacto';
+import Admin from './components/admin/Admin';
 
 export const Routes = () => (
     <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/catalogo" component={Product}/>
-        <Route exact path="/login" component={Login}/>
-        <Route exact path="/perfil" component={Perfil}/>
-        <Route exact path="/contacto" component={Contacto}/>
+        <Route path="/catalogo" component={Product}/>
+        <Route path="/login" component={Login}/>
+        <Route path="/perfil" component={Perfil}/>
+        <Route path="/contacto" component={Contacto}/>
         <Route path="/detail" component={ProductDetailDisplay} />
+        <Route path="/admin" component={Admin} />
         <Route render={() => <h2>Aqui  no</h2>} />
 
     </Switch>

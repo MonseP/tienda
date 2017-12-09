@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
 import './Nav.css';
 import {Link} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 class Nav extends Component {
+
+    state = {
+      top:true
+    };
+
     componentWillMount(){
+        this.handleScroll();
         window.addEventListener('scroll', this.handleScroll);
     }
 
-    handleScroll = (event) => {
-    if(window.scrollY > 700){
-        var elemento = document.getElementById("navbar");
-        elemento.className += " color";
-
+    handleScroll = () => {
+        const pathName = this.props.location.pathname;
+        console.log(pathName);
+        if(window.scrollY > 700 && pathName === '/' ) {
+            this.setState({top: false});
+        } else if(pathName !== '/'){
+            this.setState({top:false});
+        } else{
+            this.setState({top:true})
         }
-    };
+        };
 
     render() {
-
+        const {top} = this.state;
         return (
-            <div id='navbar' className="nav">
+
+            <div ref={div=>this.div = div} id='navbar' className={top ? "nav":"nav color"}>
                 <div className="img_logo">
                    <Link to="/" >
                         <span>Logo</span>
@@ -41,4 +53,4 @@ class Nav extends Component {
     }
 }
 
-export default Nav;
+export default withRouter(Nav);

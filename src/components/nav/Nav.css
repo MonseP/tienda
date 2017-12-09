@@ -13,11 +13,14 @@
     position: fixed;
     z-index: 999;
     font-family: 'Montserrat', sans-serif;
+    color:white;
 
 }
 .color{
     background-color: white;
     border-bottom: 1px solid #f7f7f7 ;
+    color:inherit;
+
 }
 .nav a{
     text-decoration: none;

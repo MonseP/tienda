@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Contacto.css';
 import Nav from '../nav/Nav';
 import FontAwesome from 'react-fontawesome';
-import {Link} from 'react-router-dom';
 
 export const ContactoDisplay = () => {
 
@@ -45,7 +44,7 @@ export const ContactoDisplay = () => {
                     </form>
                 </div>
                 <div className="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14944.998238143371!2d-104.7977181!3d20.5369676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x21e6ad44c7fd5ee5!2sRancho+La+Esmeralda!5e0!3m2!1ses-419!2smx!4v1512777419294" style={{width:"100%",height:"370px", border:0 }}   frameborder="0"  ></iframe>
+                    <iframe title="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14944.998238143371!2d-104.7977181!3d20.5369676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x21e6ad44c7fd5ee5!2sRancho+La+Esmeralda!5e0!3m2!1ses-419!2smx!4v1512777419294" style={{width:"100%",height:"370px", border:0 }}    ></iframe>
                 </div>
 
 

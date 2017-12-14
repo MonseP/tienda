@@ -1,18 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Cart.css';
 import {Link} from 'react-router-dom';
 
+let img;
+const organic = "http://www.skepticink.com/avant-garde/files/2015/09/organic.jpg";
 
-export const CartDisplay = () => {
+export const CartDisplay = ({id, img, name, desc, photos, price, text}) => {
+    if(!photos) img = organic;
+    else img = photos[0];
 
     return (
         <div className="cart">
-            <Link to="/detail" style={{color:"inherit"}}>
+            <Link to={`/catalogo/${id}`} style={{color:"inherit"}}>
             <div className="cart_img ">
-                <img  src="https://images.pexels.com/photos/9784/honey-makro.jpg?h=350&dpr=2&auto=compress&cs=tinysrgb" alt=""/>
+                <img  src={img} alt=""/>
             </div>
-            <p className="name_product">Miel de abeja</p>
-            <p className="apear">$250.00</p>
+            <p className="name_product">{name}</p>
+                <div className="apear">
+                    <p className="pes">{desc}</p>
+                    <p className="pes">$ {price} mxn</p>
+                </div>
             </Link>
         </div>
     );

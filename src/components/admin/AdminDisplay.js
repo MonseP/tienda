@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './Admin.css';
-import {Link} from 'react-router-dom';
 import { Tabs } from 'antd';
 import { Modal, Button } from 'antd';
-import { Table, Icon } from 'antd';
+import { Table } from 'antd';
+import firebase from '../../firebase';
+import toastr from 'toastr';
 
 import ProductForm from './ProductForm';
 
@@ -11,41 +12,120 @@ const TabPane = Tabs.TabPane;
 function callback(key) {
     console.log(key);
 }
-const { Column, ColumnGroup } = Table;
+const { Column } = Table;
 
-const data = [{
-    key: '1',
-    firstName: 'John',
-    lastName: 'Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-}, {
-    key: '2',
-    firstName: 'Jim',
-    lastName: 'Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-}, {
-    key: '3',
-    firstName: 'Joe',
-    lastName: 'Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
-}];
+
 class AdminDisplay extends Component {
 
-    state = { visible: false }
+    state = {
+        file:null,
+        errors:{},
+        newProduct:{
+
+        },
+        products: [
+
+        ],
+        visible: false }
     showModal = () => {
         this.setState({
             visible: true,
         });
-    }
+    };
     hideModal = () => {
         this.setState({
             visible: false,
         });
-    }
-render() {
+    };
+
+    componentWillMount(){
+        let products = this.state.products;
+        firebase.database().ref("products")
+            .on("child_added", snap=>{
+                let nino = snap.val();
+                nino["id"] = snap.key;
+                products.push(nino);
+                this.setState({products});
+            });
+        firebase.database().ref("products")
+            .on("child_removed", snap =>{
+                let id = snap.key;
+                products = products.filter(p=>p.id !==id);
+                this.setState({products});
+            });
+    };
+
+    remove = (id) =>{
+        if(window.confirm("Seguro?")){
+            firebase.database().ref("products")
+                .child(id)
+                .remove()
+                .then(r=>toastr.warning("eliminado"))
+                .catch(e=>{
+                    toastr.error("no se puede")});
+        }
+    };
+    onChangeForm = (e) => {
+        let newProduct = this.state.newProduct;
+        const field = e.target.name;
+        const value = e.target.value;
+        newProduct[field] = value;
+        this.setState({newProduct});
+        console.log(newProduct);
+    };
+    onChangeFile = (e) => {
+        const file = e.target.files[0];
+        this.setState({file});
+    };
+
+    validateForm = () => {
+        let newProduct = this.state.newProduct;
+        console.log(newProduct)
+        let errors = this.state.errors;
+        let isOk = true;
+        return isOk;
+    };
+    onSave = (e) =>{
+        e.preventDefault()
+        if(this.validateForm()){
+            firebase.database().ref("products")
+                .push(this.state.newProduct)
+                .then(r=>{
+                    console.log(r.key)
+                    if(this.state.file){
+                        let updates = {};
+                        firebase.storage()
+                            .ref(r.key)
+                            .child(this.state.file.name)
+                            .put(this.state.file)
+                            .then(s=>{
+                                const link = s.downloadURL;
+                                let newProduct = this.state.newProduct;
+                                newProduct["photos"] =[link];
+                                updates[`/products/${r.key}`] = newProduct;
+                                firebase.database().ref().update((updates));
+
+                            });
+                    }
+                    toastr.success("Si guarde" + r.key)
+
+
+                })
+                .catch(e=>{
+                    toastr.error("asi no:", e.message);
+                });
+        }else{
+            alert("no se puede");
+        };
+        const hideModal = this.setState({
+                visible: false,
+            });
+
+    };
+
+
+    render() {
+        const {products, errors} = this.state;
 
 
 
@@ -57,33 +137,33 @@ render() {
                         <Tabs defaultActiveKey="1" onChange={callback}>
                             <TabPane tab="Órdenes" key="1">
                                 <h3 className="tab_name">Órdenes</h3>
-                                <Table dataSource={data}>
+                                <Table dataSource={products}>
 
                                     <Column
                                         title="Nombre del Producto"
-                                        dataIndex="firstName"
-                                        key="firstName"
+                                        dataIndex="name"
+                                        key="name"
                                     />
                                     <Column
                                         title="Descripcion"
-                                        dataIndex="lastName"
-                                        key="lastName"
+                                        dataIndex="desc"
+                                        key="desc"
                                     />
 
                                     <Column
                                         title="Precio"
-                                        dataIndex="age"
-                                        key="age"
+                                        dataIndex="price"
+                                        key="price"
                                     />
                                     <Column
                                         title="Cantidad"
-                                        dataIndex="age"
-                                        key="age"
+                                        dataIndex="cant"
+                                        key="cant"
                                     />
                                     <Column
                                         title="Status"
-                                        dataIndex="age"
-                                        key="age"
+                                        dataIndex=" cant"
+                                        key="star"
                                     />
 
                                 </Table>
@@ -91,42 +171,49 @@ render() {
                             </TabPane>
                             <TabPane tab="Productos" key="2">
                                 <h3 className="tab_name">Lista de Productos</h3>
-                                <Table dataSource={data}>
+                                <Table dataSource={products}>
 
                                         <Column
                                             title="Nombre del Producto"
-                                            dataIndex="firstName"
-                                            key="firstName"
+                                            dataIndex="name"
+                                            key="name"
                                         />
                                         <Column
                                             title="Descripcion"
-                                            dataIndex="lastName"
-                                            key="lastName"
+                                            dataIndex="desc"
+                                            key="desc"
                                         />
 
                                     <Column
                                         title="Precio"
-                                        dataIndex="age"
-                                        key="age"
+                                        dataIndex="price"
+                                        key="price"
                                     />
                                     <Column
                                         title="Cantidad"
-                                        dataIndex="age"
-                                        key="age"
+                                        dataIndex="cant"
+                                        key="cant"
                                     />
 
                                 </Table>
 
-                                <Button type="primary" onClick={this.showModal}>Modal</Button>
+                                    <Button type="primary" onClick={this.showModal}>Agregar</Button>
                                 <Modal
                                     title="Agregar un nuevo producto"
                                     visible={this.state.visible}
-                                    onOk={this.hideModal}
+                                    onOk={this.onSave}
                                     onCancel={this.hideModal}
                                     okText="Guardar"
                                     cancelText="Cancelar"
                                 >
-                                    <ProductForm/>
+                                    <ProductForm
+                                        onChangeFile={this.onChangeFile}
+                                        products={products}
+                                        product={this.state.newProduct}
+                                        onChangeForm={this.onChangeForm}
+                                        errors={errors}
+                                        onSave={this.onSave}
+                                        />
                                 </Modal>
                             </TabPane>
                             <TabPane tab="Historial" key="3">Historial</TabPane>

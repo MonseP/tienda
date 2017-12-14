@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {Route} from 'react-router-dom';
 import {Routes} from './routes';
-import Nav from './components/nav/Nav'
-import Footer from './components/footer/Footer';
 import './App.css';
 
 

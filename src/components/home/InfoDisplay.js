@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Tilt from 'react-tilt'
+import React from 'react';
 
 import './Home.css';
 

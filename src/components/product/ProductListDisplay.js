@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Product.css';
 import FontAwesome from 'react-fontawesome';
 import Cart from '../cart/Cart';
 import Nav from '../nav/Nav';
 
-export const ProductListDisplay = () => {
+export const ProductListDisplay = ({products}) => {
 
     return (
         <div className="productos">
@@ -17,21 +17,9 @@ export const ProductListDisplay = () => {
                     <span><input type="text" className="search" placeholder="Buscar"/><FontAwesome className="icon_search" name='search' /></span>
                 </div>
             </div>
-            <div className="fl">
 
                 <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-                <Cart />
-            </div>
+
         </div>
     );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css';
 import Nav  from '../nav/Nav';
 
-export const ProductDetailDisplay = ({name, desc, price,photos}) => {
+export const ProductDetailDisplay = ({name, desc, price,photos, info}) => {
 
     return (
         <div className="detalle">
@@ -23,6 +23,9 @@ export const ProductDetailDisplay = ({name, desc, price,photos}) => {
                     </div>
                     <div className="descript_product">
                         <h3 className="descript_name">{name}</h3>
+
+                        <p className="descript_etiq">{info}</p>
+                        <br/>
                         <p className="descript_data">{desc}</p>
                        <div className="box_price">
                         <p className="descript_price">$ {price} MXN</p>

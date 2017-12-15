@@ -6,14 +6,25 @@ import {withRouter} from 'react-router-dom';
 class Nav extends Component {
 
     state = {
-      top:true
+      top:true,
+        isLogged:false
     };
 
-    componentWillMount(){
+    signOut  = () => {
+        localStorage.removeItem("user");
+        this.props.history.push("/login");
+    };
+    componentWillMount() {
         this.handleScroll();
         window.addEventListener('scroll', this.handleScroll);
-    }
 
+        const user = localStorage.getItem("user");
+        if (user) {
+            this.setState({isLogged:true})
+        }else{
+            this.setState({isLogged:false})
+        }
+    }
     handleScroll = () => {
         const pathName = this.props.location.pathname;
         console.log(pathName);
@@ -26,8 +37,10 @@ class Nav extends Component {
         }
         };
 
+
+
     render() {
-        const {top} = this.state;
+        const {top, isLogged} = this.state;
         return (
 
             <div ref={div=>this.div = div} id='navbar' className={top ? "nav":"nav color"}>
@@ -43,9 +56,9 @@ class Nav extends Component {
                     <Link to="/contacto">
                         <span>Contacto</span>
                     </Link>
-                    <Link to="/login" >
+                    {!isLogged ? <Link to="/login" >
                         <span>Login</span>
-                    </Link>
+                    </Link>: <button onClick={this.signOut} className="close" >Cerrar sesión</button>}
                 </div>
 
             </div>

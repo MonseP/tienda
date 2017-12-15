@@ -1,7 +1,5 @@
 import React , {Component} from 'react';
 import {ProductDetailDisplay} from './ProductDetailDisplay';
-import {getProductById, updateProductById} from '../../api/firebase';
-import toastr from 'toastr';
 import firebase from '../../firebase';
 
 class ProductDetail extends Component{

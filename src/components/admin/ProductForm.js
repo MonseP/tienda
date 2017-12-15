@@ -44,6 +44,9 @@ class ProductForm extends Component {
                            value={this.props.product.cant}
                            onChange={this.props.onChangeForm}
                            prefix={<Icon type="tag-o" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Cantidad" />
+                <TextArea name="info"
+                          value={this.props.product.info}
+                          onChange={this.props.onChangeForm} prefix={<Icon type="copy" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Etiqueta" />
                     <TextArea name="desc"
                               value={this.props.product.desc}
                               onChange={this.props.onChangeForm} prefix={<Icon type="copy" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Descripción" />

@@ -109,11 +109,18 @@
 .descript_name{
     line-height:1.4;
     font-size: 2rem;
-    margin: 0 0 10px 0;
+    margin: 0;
+    padding-bottom: 0;
 }
 .descript_data{
     color:#656565;
     font-size: .8rem;
+
+}
+.descript_etiq{
+    color:#656565;
+    font-size: .7rem;
+    margin-top: 0;
 
 }
 .descript_price{

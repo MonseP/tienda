@@ -5,7 +5,7 @@ import { Modal, Button } from 'antd';
 import { Table } from 'antd';
 import firebase from '../../firebase';
 import toastr from 'toastr';
-
+import FontAwesome from 'react-fontawesome';
 import ProductForm from './ProductForm';
 
 const TabPane = Tabs.TabPane;
@@ -137,7 +137,7 @@ class AdminDisplay extends Component {
                         <Tabs defaultActiveKey="1" onChange={callback}>
                             <TabPane tab="Órdenes" key="1">
                                 <h3 className="tab_name">Órdenes</h3>
-                                <Table dataSource={products}>
+                                <Table  dataSource={products}>
 
                                     <Column
                                         title="Nombre del Producto"
@@ -145,9 +145,9 @@ class AdminDisplay extends Component {
                                         key="name"
                                     />
                                     <Column
-                                        title="Descripcion"
-                                        dataIndex="desc"
-                                        key="desc"
+                                        title="Etiqueta"
+                                        dataIndex="info"
+                                        key="info"
                                     />
 
                                     <Column
@@ -159,11 +159,6 @@ class AdminDisplay extends Component {
                                         title="Cantidad"
                                         dataIndex="cant"
                                         key="cant"
-                                    />
-                                    <Column
-                                        title="Status"
-                                        dataIndex=" cant"
-                                        key="star"
                                     />
 
                                 </Table>
@@ -179,9 +174,9 @@ class AdminDisplay extends Component {
                                             key="name"
                                         />
                                         <Column
-                                            title="Descripcion"
-                                            dataIndex="desc"
-                                            key="desc"
+                                            title="Etiqueta"
+                                            dataIndex="info"
+                                            key="info"
                                         />
 
                                     <Column

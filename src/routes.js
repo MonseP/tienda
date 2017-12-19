@@ -15,7 +15,7 @@ export const Routes = () => (
         <Route path="/contacto" component={Contacto}/>
             <Route path="/catalogo/:id" component={ProductDetail} />
         <Route path="/admin" component={Admin} />
-        <Route render={() => <h2>Aqui  no</h2>} />
+        <Route render={() => <h2>En construcción</h2>} />
 
     </Switch>
 

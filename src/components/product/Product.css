@@ -82,10 +82,14 @@
     margin: 0 auto;
     height:370px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .box_im img{
-    width:100%;
-    height:auto;
+    width:auto;
+    height:100%;
+    margin: 0 auto;
 }
 .box_mini_img{
     width:80%;

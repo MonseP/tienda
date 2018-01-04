@@ -31,7 +31,7 @@ export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error
                             <button type="submit" className="btn_login">Iniciar sesión</button>
                         </form>
                     </div>
-                    <p className="ayuda"><a onClick={changeRegistro} href="#!">Crea una cuenta</a></p>
+                    <p className="ayuda"><a onClick={changeRegistro} href="#!">Crear una cuenta</a></p>
 
                 </div>
             </div>

@@ -1,0 +1,329 @@
+.container-carrito steps {
+    background-color: #0000;
+}
+
+
+.perfil-contenedor {
+
+height: 50%;
+width: 50%;
+margin: 0 auto;
+position: absolute;
+ top: 10%;
+ left: 25%;
+ vertical-align: middle;
+}
+
+
+.steps-content {
+  margin-top: 16px;
+  border: 1px dashed #e9e9e9;
+  border-radius: 6px;
+  background-color: #fafafa;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+
+
+
+.editable-cell {
+  position: relative;
+}
+
+.editable-cell-input-wrapper,
+.editable-cell-text-wrapper {
+  padding-right: 24px;
+}
+
+.editable-cell-text-wrapper {
+  padding: 5px 24px 5px 5px;
+}
+
+.editable-cell-icon,
+.editable-cell-icon-check {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  cursor: pointer;
+}
+
+.editable-cell-icon {
+  line-height: 18px;
+  display: none;
+}
+
+.editable-cell-icon-check {
+  line-height: 28px;
+}
+
+.editable-cell:hover .editable-cell-icon {
+  display: inline-block;
+}
+
+.editable-cell-icon:hover,
+.editable-cell-icon-check:hover {
+  color: #108ee9;
+}
+
+.editable-add-btn {
+  margin-bottom: 8px;
+}
+
+
+.form-table-total{
+  position: relative;
+left: 37%;
+}
+
+.select-pago-titulo h1{
+  font-size: 13px;
+  position: absolute;
+   top: 20%;
+
+}
+
+.select-pago img{
+height:40%;
+width: 40%;
+
+}
+
+.select-pago button{
+height: 50%;
+width: 30%;
+}
+
+.form-pago input[type=text] {
+  width: 45%;
+  height: 8%;
+  position: relative;
+  left: 28%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border: 1px solid #aec6ca;
+  outline: none;
+
+
+}
+.form-pago input[type=text]:focus {
+    border: 2px solid #77c1f6;
+}
+
+.form-pago input[type=number] {
+    width: 45%;
+    height: 8%;
+    position: relative;
+    left: 28%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 2px 0;
+    border: 1px solid #aec6ca;
+    outline: none;
+
+}
+.form-pago input[type=number]:focus {
+    border: 2px solid #77c1f6;
+}
+
+
+.form-pago{
+  text-align: center;
+font-weight:bold;
+}
+
+.form-pago button {
+    width: 45%;
+border-radius: 5px;
+  padding: 6px 4px;
+  color: white;
+  background-color: #00a2ae;
+  border: none;
+  margin-top: 10px;
+}
+
+.form-pago button:hover {
+  color: #ddecee;
+  box-shadow: inset 0 0 0 3px #70c3c9;
+
+}
+
+
+
+/* El formulario de envío */
+
+#contenedor {
+  background: #FFF;
+  margin: 1em auto;
+  padding: 1em;
+  width: 768px;
+}
+
+
+.form-envio{
+  font-size: 13px;
+position: relative;
+margin-top: -60px;
+ }
+
+.form-envio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-envio ul li {
+  border-top: 1px solid #CCC;
+  margin: 1em 0;
+  padding: 1em;
+  width: auto;
+  overflow: hidden;
+}
+
+/* El formulario se organiza en dos columnas, el título y los controles */
+.form-envio ul li label.titulo {
+float: left;
+  font-size: 12px;
+  text-align: right;
+}
+
+.form-envio   ul li div.controles {
+  margin-left: 25%;
+}
+
+
+/* El título de los elementos de la lista */
+.form-envio  ul li label.titulo {
+  font-weight: bold;
+}
+
+.form-envio  ul li div span {
+  float: left;
+  padding: 0.3em 0;
+}
+
+.form-envio  ul li div span.completo {
+  width: 100%;
+}
+
+.form-envio  ul li div span.mitad {
+  width: 11%;
+}
+
+ .form-envio  ul li div span.tercio {
+  width: 20%;
+  height:60%;
+  left: 10%;
+
+}
+
+.form-envio  ul li div span.dostercios {
+  width: 20%;
+     height:60%;
+       left: 80%;
+
+}
+
+/* Como se define display: block, se muestra en la línea siguiente */
+.form-envio   ul li div span label {
+  display: block;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Configuración de los controles del formulario */
+.form-envio  ul li input {
+  padding: 0.2em;
+}
+
+.form-envio  input#apellido1, input#apellido2, input#direccion, input#email,input#nombre {
+  width: 45%;
+  height: 20%;
+
+}
+
+
+.form-envio input#email{
+  width: 60%;
+  height: 30%;
+}
+
+.form-envio  input#codigopostal {
+  width: 60%;
+  height: 30%;
+  position: relative;
+  left: 150%;
+}
+
+.form-envio  input#municipio {
+  width: 85%;
+  height: 30%;
+  position: relative;
+  left: 50%;
+}
+
+.form-envio  input#pais {
+  width: 150%;
+  height: 30%;
+  position: relative;
+  left: 80%;
+}
+
+.form-envio  input#telefonofijo{
+  width: 86%;
+  height: 24%;
+  position: relative;
+left: 200%;
+}
+
+
+.form-envio  input#telefonomovil {
+  width: 300%;
+  height: 24%;
+  position: relative;
+left: 200%;
+}
+
+/* Cambia el color cuando se sitúa el cursor del ratón */
+.form-envio  ul li:hover {
+  background-color: #ddeaec;
+}
+
+.form-envio  ul li.botones:hover {
+  background-color: transparent;
+}
+
+/* Destaca el control cuando recibe el foco */
+.form-envio  ul li input, ul li select {
+  border: 1px solid #aec6ca;
+border-radius: 3px;
+}
+
+.form-envio  ul li.botones input {
+  border: 2px solid #CCC;
+}
+
+.form-envio   ul li input:focus, ul li select:focus {
+  border: 2px solid #77c1f6;
+}
+#alta{
+  width: 20%;
+  height: 10%;
+border-radius: 5px;
+padding: 6px 4px;
+color: white;
+background-color: #00a2ae;
+border: none;
+margin-top: 10px;
+}
+
+#alta:hover {
+  color: #ddecee;
+  box-shadow: inset 0 0 0 3px #70c3c9;
+
+}

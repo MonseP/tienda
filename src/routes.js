@@ -8,6 +8,9 @@ import Contacto from './components/contacto/Contacto';
 import Admin from './components/admin/Admin';
 import CarritoHome from './components/carrito/CarritoHome';
 import Perfil from './components/perfil/Perfil';
+import PerfilDirecciones from './components/perfil/PerfilDirecciones';
+import Pedidos from './components/perfil/PerfilDatos/Pedidos';
+import Editar from './components/perfil/EditarDatos/Editar';
 
 export const Routes = () => (
     <Switch>
@@ -15,10 +18,15 @@ export const Routes = () => (
         <Route exact path="/catalogo" component={Product}/>
         <Route path="/login" component={Login}/>
         <Route path="/contacto" component={Contacto}/>
-      <Route path="/catalogo/:id" component={ProductDetail} />
+        <Route path="/catalogo/:id" component={ProductDetail} />
         <Route path="/admin" component={Admin} />
         <Route exact path="/carrito" component={CarritoHome} />
         <Route path="/perfil" component={Perfil} />
+        <Route path="/direcciones" component={PerfilDirecciones} />
+        <Route path="/direcciones" component={PerfilDirecciones} />
+        <Route path="/pedidos" component={Pedidos} />
+        <Route path="/editarperfil" component={Editar} />
+
 
         <Route render={() => <h2>En construcción</h2>} />
 

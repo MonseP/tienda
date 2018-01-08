@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Nav from '../nav/Nav';
 import SubMenu from './SubMenu.js';
-import PerfilDatos from './PerfilDatos';
+import User from './User.js';
+import PerfilPersonal from './PerfilPersonal.js';
 
 
 
@@ -19,7 +20,9 @@ class Perfil extends React.Component {
       <div >
         <SubMenu/>
 
-          <PerfilDatos/>
+          <User/>
+
+          <PerfilPersonal/>
 
 
       </div>

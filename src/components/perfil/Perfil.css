@@ -1,4 +1,14 @@
 .avatar-user{
+  position: absolute;
+   top: 10%;
+   left:90%;
+   vertical-align: middle;
+}
+
+.avatar-user h2{
+position: relative;
+   top:-2%;
+   left:-30%;
 
 }
 
@@ -6,5 +16,140 @@
   margin: 0 auto;
   position: absolute;
    top: 10%;
+}
 
+.form-perfil-direccion{
+  position: relative;
+top:150px;
+   left:2%;
+   text-align: center;
+ font-weight:bold;
+}
+
+
+
+.form-perfil-direccion input[type=text] {
+  width: 45%;
+  height: 8%;
+  position: relative;
+  left: 28%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border: 1px solid #aec6ca;
+  outline: none;
+
+
+}
+.form-perfil-direccion  input[type=text]:focus {
+    border: 2px solid #77c1f6;
+}
+
+.form-perfil-direccion input[type=number] {
+    width: 45%;
+    height: 8%;
+    position: relative;
+    left: 28%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 2px 0;
+    border: 1px solid #aec6ca;
+    outline: none;
+
+}
+.form-perfil-direccion input[type=number]:focus {
+    border: 2px solid #77c1f6;
+}
+
+
+
+.form-perfil-direccion button {
+    width: 45%;
+border-radius: 5px;
+  padding: 6px 4px;
+  color: white;
+  background-color: #00a2ae;
+  border: none;
+  margin-top: 10px;
+}
+
+.form-perfil-direccion  button:hover {
+  color: #ddecee;
+  box-shadow: inset 0 0 0 3px #70c3c9;
+
+}
+
+
+.form-personal-data{
+  position: relative;
+  top:150px;
+   left:2%;
+   text-align: center;
+  font-weight:bold;
+
+}
+
+
+.form-personal-data input[type=text] {
+  width: 20%;
+  height: 10%;
+  position: relative;
+  left: 40%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border: 1px solid #aec6ca;
+  outline: none;
+
+
+}
+
+.form-personal-data input[type=number] {
+  width: 20%;
+  height: 10%;
+  position: relative;
+  left: 40%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border: 1px solid #aec6ca;
+  outline: none;
+}
+
+.form-personal-data input[type=password] {
+  width: 20%;
+  height: 10%;
+  position: relative;
+  left: 40%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border: 1px solid #aec6ca;
+  outline: none;
+}
+
+
+.custom-filter-dropdown {
+  padding: 8px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+.custom-filter-dropdown input {
+  width: 130px;
+  margin-right: 8px;
+}
+
+.highlight {
+  color: #f50;
+}
+
+.pedidos-table{
+  width: 65%;
+  height: 50%;
+  position: relative;
+top:150px;
+   left:25%;
+   text-align: center;
 }

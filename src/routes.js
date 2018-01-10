@@ -11,6 +11,7 @@ import Perfil from './components/perfil/Perfil';
 import PerfilDirecciones from './components/perfil/PerfilDirecciones';
 import Pedidos from './components/perfil/PerfilDatos/Pedidos';
 import Editar from './components/perfil/EditarDatos/Editar';
+import Check from './components/checkout/Check';
 
 export const Routes = () => (
     <Switch>
@@ -26,6 +27,7 @@ export const Routes = () => (
         <Route path="/direcciones" component={PerfilDirecciones} />
         <Route path="/pedidos" component={Pedidos} />
         <Route path="/editarperfil" component={Editar} />
+        <Route path="/check" component={Check} />
 
 
         <Route render={() => <h2>En construcción</h2>} />

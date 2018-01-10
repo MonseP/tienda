@@ -25,6 +25,9 @@ class Editar extends React.Component {
 
         <div className="form-personal-data">
               <form>
+
+                <h3> Edita tus datos</h3>
+                <br/>
                 <label for="fname">Nombre Completo</label> <br/>
                 <input type="text" value="Montserrat Plata Torres" /> <br/>
                 <label for="fname">Email</label><br/>

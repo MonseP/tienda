@@ -21,11 +21,25 @@ class Check extends React.Component {
 <div className="form-check">
 
                     <div class="mobile">
-                     <div class="credit-card">
-                       <span id="card-name-display"> Visa</span>
-                       <span id="card-number-display">1234-1234 </span>
-                       <span id="expiration-display">09/22</span>
-                     </div>
+                <div class="credit-card">
+
+                   <div className="card-image">
+                   <div className="flip">
+
+                       <img src="http://elmanana.com.mx/imgs/noticias/original/bc535087d645155_ee597558e83c18f7bf4cf6df870a430a" className="flip-1"/>
+                       <img src="http://blog.i-pay.co.za/wp-content/uploads/2015/01/instant-payment-solution.png" className="flip-2"/>
+
+                   </div>
+                   </div>
+</div>
+
+
+
+
+
+
+
+
 
                      <div class="payment-form">
                        <form>
@@ -49,20 +63,20 @@ class Check extends React.Component {
                         <input id="address" name="address" type="checkbox" value="address" />
                         <span> Acepto términos y condiciones </span>
                          </label>
-                      </fieldset>
-
-                      <button type="submit">Aceptar</button>
+                          </fieldset>
 
 
+
+   <button type="submit">Aceptar</button>
                 </form>
 
 
                 </div>
                   </div>
                   </div>
+   </div>
 
 
-                   </div>
 
 
 

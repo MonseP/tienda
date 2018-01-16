@@ -7,17 +7,17 @@ const data = [{
   key: '1',
   name: 'Miel',
   precio: 200,
-  descripcion: 'Miel de avispa',
+  descripcion: 'Comprado',
 }, {
   key: '2',
-  name: 'Joe Black',
-  precio: 42,
-  descripcion: 'hay algo',
+  name: 'Miel de abeja',
+  precio: 490,
+  descripcion: 'Comprado',
 }, {
   key: '3',
   name: 'ddddd',
   precio: 320,
-  descripcion: 'dddddd',
+  descripcion: 'En envío',
 }];
 
 class PerfilPedidos extends React.Component {

@@ -47,7 +47,7 @@ class Check extends React.Component {
                           <label for="card-name">Nombre completo de la tarjeta</label>
 
                           <input id="card-name" type="text"/>
-                          <label for="card-number">Número de la tarjeta</label>
+                          <label for="card-number">Número de cuenta</label>
                           <input id="card-number" maxlength="19" minlength="13" pattern="[0-9]*" type="text" />
                           <label for="expiration">Fecha de expiración</label>
 
@@ -61,7 +61,7 @@ class Check extends React.Component {
                         <label for="address">
 
                         <input id="address" name="address" type="checkbox" value="address" />
-                        <span> Acepto términos y condiciones </span>
+                        <span> Acepto </span>
                          </label>
                           </fieldset>
 

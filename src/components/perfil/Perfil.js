@@ -3,6 +3,7 @@ import Nav from '../nav/Nav';
 import SubMenu from './SubMenu.js';
 import User from './User.js';
 import PerfilPersonal from './PerfilPersonal.js';
+import TabsMenu from './TabsMenu.js';
 
 
 
@@ -18,11 +19,14 @@ class Perfil extends React.Component {
 <Nav/>
 
       <div >
-        <SubMenu/>
+
 
           <User/>
 
-          <PerfilPersonal/>
+      <PerfilPersonal/>
+
+
+      <TabsMenu/>
 
 
       </div>

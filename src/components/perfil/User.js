@@ -10,9 +10,9 @@ class User extends React.Component {
     return (
 
 <div className="avatar-user">
-<Avatar icon="user" />
+  <h1>Mis Datos</h1>
+<img className="avatar" src="http://4.bp.blogspot.com/-vSWiho-JpHw/UTVvBCOrZ1I/AAAAAAAAwMU/22y_wEbjmyI/s1600/Fotos+Graciosas+de+Bebes+18.jpg"/>
 
-<h2>Montserrat</h2>
        </div>
     );
   }

@@ -14,18 +14,13 @@ class PerfilDirecciones extends React.Component {
 
 
       <div>
-
-<Nav/>
-<User/>
-<SubMenu/>
-
         <div className="form-perfil-direccion">
 
           <h3>Agregue su dirección particular</h3>
           <br/>
               <form>
                 <label for="fname">Nombre del Responsable</label>
-                <input type="text" />
+                <input type="text" placeholder="Nombre" />
                 <label >País</label>
                   <input type="text"  placeholder="País"/>
 

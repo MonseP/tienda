@@ -11,16 +11,24 @@ class CarritoHome extends React.Component {
     return (
 
 
-      <div>
-
+      <div className="carrito">
+    <body>
 
 <Nav/>
+<div >
 
-      <div className="perfil-contenedor">
+      <div className="carrito-contenedor">
+
+
+
+
+
         <Carrito/>
 
 
       </div>
+    </div>
+    </body>
        </div>
     );
   }

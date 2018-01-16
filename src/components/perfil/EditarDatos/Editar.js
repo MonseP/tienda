@@ -23,7 +23,7 @@ class Editar extends React.Component {
 
 
 
-        <div className="form-personal-data">
+        <div className="form-personal-data-edit">
               <form>
 
                 <h3> Edita tus datos</h3>

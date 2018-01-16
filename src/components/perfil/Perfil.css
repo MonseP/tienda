@@ -1,14 +1,37 @@
 .avatar-user{
-  position: absolute;
-   top: 10%;
-   left:90%;
-   vertical-align: middle;
+  width:100%;
+  height:200px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-position: center;
+  background-size: center;
+  background-image: url('https://images.pexels.com/photos/15964/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
 }
 
-.avatar-user h2{
+.avatar{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+border-style:  ridge ;
+border-color: white;
+  position: relative;
+     top:50%;
+     right:40%;
+     overflow:hidden;
+}
+
+
+.avatar:hover {
+-webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+
+
+.avatar-user h1{
 position: relative;
-   top:-2%;
-   left:-30%;
+   top:50%;
+justify-content: center;
+   color: white;
 
 }
 
@@ -20,8 +43,6 @@ position: relative;
 
 .form-perfil-direccion{
   position: relative;
-top:150px;
-   left:2%;
    text-align: center;
  font-weight:bold;
 }
@@ -78,57 +99,7 @@ border-radius: 5px;
   box-shadow: inset 0 0 0 3px #70c3c9;
 
 }
-
-
-.form-personal-data{
-  position: relative;
-  top:150px;
-   left:2%;
-   text-align: center;
-  font-weight:bold;
-
-}
-
-
-.form-personal-data input[type=text] {
-  width: 20%;
-  height: 10%;
-  position: relative;
-  left: 40%;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 2px 0;
-  border: 1px solid #aec6ca;
-  outline: none;
-
-
-}
-
-.form-personal-data input[type=number] {
-  width: 20%;
-  height: 10%;
-  position: relative;
-  left: 40%;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 2px 0;
-  border: 1px solid #aec6ca;
-  outline: none;
-}
-
-.form-personal-data input[type=password] {
-  width: 20%;
-  height: 10%;
-  position: relative;
-  left: 40%;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 2px 0;
-  border: 1px solid #aec6ca;
-  outline: none;
-}
-
-
+/* tabla de ant:  */
 .custom-filter-dropdown {
   padding: 8px;
   border-radius: 6px;
@@ -152,4 +123,14 @@ border-radius: 5px;
 top:150px;
    left:25%;
    text-align: center;
+}
+
+.tabs{
+  position: relative;
+  top:-500px;
+  left: 30%;
+justify-content: center;
+width: 600px;
+height: 250px;
+
 }

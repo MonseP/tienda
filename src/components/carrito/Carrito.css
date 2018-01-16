@@ -1,18 +1,20 @@
 .container-carrito steps {
     background-color: #0000;
+
 }
 
-
-.perfil-contenedor {
-
-height: 50%;
-width: 50%;
+.carrito-contenedor {
+  height: 50%;
+width: 70%;
 margin: 0 auto;
 position: absolute;
  top: 10%;
- left: 25%;
+ left: 15%;
  vertical-align: middle;
+ background-color: #c2dbde;
 }
+
+
 
 
 .steps-content {
@@ -179,8 +181,6 @@ margin-top: -60px;
 
 .form-envio ul li {
   border-top: 1px solid #CCC;
-  margin: 1em 0;
-  padding: 1em;
   width: auto;
   overflow: hidden;
 }
@@ -204,7 +204,6 @@ float: left;
 
 .form-envio  ul li div span {
   float: left;
-  padding: 0.3em 0;
 }
 
 .form-envio  ul li div span.completo {
@@ -238,7 +237,6 @@ float: left;
 
 /* Configuración de los controles del formulario */
 .form-envio  ul li input {
-  padding: 0.2em;
 }
 
 .form-envio  input#apellido1, input#apellido2, input#direccion, input#email,input#nombre {

@@ -49,6 +49,7 @@ export const DestacadosDisplay = () => {
                     <span>Otros</span>
                     <p>y más...</p>
                 </div>
+
             </div>
         </div>
     );

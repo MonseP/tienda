@@ -1,49 +1,11 @@
-.contacto_img{
-    width:100%;
-    height:450px;
-
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    background-position: center;
-    background-size: center;
-    background-image: url('https://images.pexels.com/photos/162971/potatoes-french-mourning-funny-162971.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
-}
-.contacto_img h2{
-    color:white;
-    font-size: 39px;
-    padding-top: 183px;
-}
-.contacto_img p{
-    font-size: 15px;
-    color:white;
-}
-.datos_contacto{
-    display: flex;
-    flex-wrap: wrap;
-    width:80%;
-    margin: 5% auto;
-}
-.phone, .adress, .service{
-    width:300px;
-    flex-grow: 1;
-    text-align: center;
-}
-.datos_contacto h4{
-    font-size: 18px;
-    margin-top: 20px;
-}
-.datos_contacto p{
-    font-size: 13px;
-    line-height:1.4rem;
-}
-.map, .formu{
-    width:70%;
-    margin: 0 auto;
-}
-.map{
-    margin-top: 100px;
+.contacto{
     padding-bottom: 50px;
 }
+.map, .formu{
+    width:80%;
+    margin: 0 auto;
+}
+
 .formu{
     margin-top: 50px;
     text-align: center;
@@ -52,10 +14,15 @@
     text-align: center;
     font-size: 25px;
     margin-bottom: 50px;
+    color:#79797B;
+}
+.contact_flex{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 form input{
-    width:70%;
+    width:100%;
     height:56px;
     margin: 20px auto;
     display: block;
@@ -67,7 +34,7 @@ form input{
 }
 form textarea{
 
-    width:70%;
+    width:100%;
     height:150px;
     margin: 20px auto;
     display: block;
@@ -80,7 +47,7 @@ form textarea{
 .btn_form{
     width:20%;
 
-    background-color: #616161;
+    background-color: #1C7E7A;
     border-radius: 0;
     border:transparent;
     color:white;
@@ -88,4 +55,9 @@ form textarea{
 }
 .cambio{
     color:inherit !important;
+}
+.ctbox{
+    width:400px;
+    flex-grow: 1;
+    color:#79797B;
 }

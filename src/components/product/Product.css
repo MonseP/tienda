@@ -1,5 +1,7 @@
 .productos{
-
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 50px 0;
 }
 .box_navbar{
     height:50px;
@@ -28,11 +30,11 @@
 
 }
 .fl{
-    width:90%;
+    width:70%;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 130px;
+    padding-top: 50px;
 
 }
 .card{
@@ -60,9 +62,7 @@
 .detalle{
     height:100vh;
 }
-.box_detail {
-    padding-top: 50px;
-}
+
 .detail{
     padding-top: 50px;
     display: flex;
@@ -70,8 +70,6 @@
     margin: 0 auto;
     flex-wrap: wrap;
 
-
-    border-top:1px solid #f7f7f7 ;
 }
 .img_product{
     width:600px;

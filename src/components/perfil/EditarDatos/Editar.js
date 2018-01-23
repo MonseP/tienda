@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import {Link, NavLink} from 'react-router-dom';
 import Nav from '../../nav/Nav';
-import SubMenu from '../SubMenu.js';
 import User from '../User.js';
-import '../Perfil.css';
+
+import './Editar.css';
 
 
 
@@ -17,38 +18,39 @@ class Editar extends React.Component {
 
 
         <Nav/>
-          <SubMenu/>
+
                     <User/>
 
 
 
 
-        <div className="form-personal-data-edit">
-              <form>
 
-                <h3> Edita tus datos</h3>
-                <br/>
-                <label for="fname">Nombre Completo</label> <br/>
-                <input type="text" value="Montserrat Plata Torres" /> <br/>
-                <label for="fname">Email</label><br/>
-                <input type="text"  /><br/>
-                <label for="fname">Contraseña</label><br/>
-                <input type="password" /><br/>
+                          <div className="form-editar">
+                            <div className="form-perfil-editar">
+
+                              <h3>Editar sus datos </h3>
+                              <br/>
+                                  <form>
 
 
+                                    <label>Nombre</label>
+                                      <input type="text"  placeholder="Nombre"/>
 
-                <label >Número de tarjeta</label> <br/>
-                <input type="number"/>
-<br/>
-              <button> Aceptar</button>
+                                      <label for="fname">Email</label>
+                                      <input type="email" placeholder="Email" />
 
 
 
-              </form>
+                          <br/>
+                                       <button  id="button-acept" type="button">Guardar</button>
+                                      <p> <NavLink to="/perfil"> Cancelar </NavLink></p>
 
 
-        </div>
-       </div>
+
+                                  </form>
+                            </div>
+                           </div>       </div>
+
     );
   }
 }

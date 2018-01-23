@@ -17,6 +17,15 @@ class CarritoHome extends React.Component {
 <Nav/>
 <div >
 
+  <div className="home-pago">
+<h2> Carrito de compras</h2>
+
+
+  </div>
+
+
+<div className="back-home-pago"> 
+</div>
       <div className="carrito-contenedor">
 
 

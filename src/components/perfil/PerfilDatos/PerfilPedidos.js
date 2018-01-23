@@ -62,6 +62,7 @@ class PerfilPedidos extends React.Component {
       dataIndex: 'name',
       key: 'name',
       filterDropdown: (
+
         <div className="custom-filter-dropdown">
           <Input
             ref={ele => this.searchInput = ele}
@@ -97,7 +98,9 @@ class PerfilPedidos extends React.Component {
       }],
       onFilter: (value, record) => record.address.indexOf(value) === 0,
     }];
-    return <Table columns={columns} dataSource={this.state.data} />;
+    return <Table columns={columns} dataSource={this.state.data} style={{background: 'white'}}/>;
+
+
   }
 }
 export default PerfilPedidos;

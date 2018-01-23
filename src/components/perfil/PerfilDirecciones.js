@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Nav from '../nav/Nav';
-import SubMenu from './SubMenu';
 import User from  './User';
 import './Perfil.css';
 
@@ -36,7 +35,7 @@ class PerfilDirecciones extends React.Component {
 
                         <label >Código Postal</label>
                         <input type="number" placeholder="C.P."/>
-
+<br/>
                    <button type="button">Agregar dirección</button>
 
 

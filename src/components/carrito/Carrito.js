@@ -1,66 +1,26 @@
 import React, { Component } from 'react';
-import './Carrito.css';
-import 'antd/dist/antd.css';
-import Tables from './Tables.js';
-import Pago from './Pago.js';
+import { Tabs } from 'antd';
 import Envio from './Envio.js';
-import { Steps, Button, message } from 'antd';
-const Step = Steps.Step;
+import TableHome from './tables/TableHome.js';
+import Pago from './pago/Pago.js';
 
-const steps = [{
-  title: 'Tu compra',
-  content: <Tables/>,
-}, {
-  title: 'Envío',
-  content: <Envio/>,
-}, {
-  title: 'Pago',
-  content:  <Pago/>,
-}];
 
 class Carrito extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      current: 0,
-    };
-  }
-  next() {
-    const current = this.state.current + 1;
-    this.setState({ current });
-  }
-  prev() {
-    const current = this.state.current - 1;
-    this.setState({ current });
-  }
+
+
   render() {
-    const { current } = this.state;
+    const TabPane = Tabs.TabPane;
+  function callback(key) {
+    console.log(key);
+  }
     return (
-      <div className= "container-carrito">
-        <Steps current={current}>
-          {steps.map(item => <Step key={item.title} title={item.title} />)}
-        </Steps>
-        <div className="steps-content">{steps[this.state.current].content}</div>
-        <div className="steps-action">
-          {
-            this.state.current < steps.length - 1
-            &&
-            <Button type="primary" onClick={() => this.next()}>Siguiente</Button>
-          }
-          {
-            this.state.current === steps.length - 1
-            &&
-            <Button type="primary" onClick={() => message.success('¡Proceso completado!')}>Terminar</Button>
-          }
-          {
-            this.state.current > 0
-            &&
-            <Button style={{ marginLeft: 8 }} onClick={() => this.prev()}>
-              Anterior
-            </Button>
-          }
-        </div>
-      </div>
+
+      <Tabs onChange={callback} type="card" >
+
+      <TabPane tab="1.Productos" key="1"><TableHome/></TabPane>
+      <TabPane tab="2.Envío" key="2"> <Envio/>  </TabPane>
+      <TabPane tab="3.Pago" key="3"> <Pago/> </TabPane>
+    </Tabs>
     );
   }
 }

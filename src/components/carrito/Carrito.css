@@ -4,14 +4,15 @@
 }
 
 .carrito-contenedor {
-  height: 50%;
+height: 50%;
 width: 70%;
 margin: 0 auto;
 position: absolute;
- top: 10%;
+ top: 17%;
  left: 15%;
  vertical-align: middle;
- background-color: #c2dbde;
+
+
 }
 
 
@@ -78,8 +79,9 @@ position: absolute;
 
 
 .form-table-total{
+  width: 50%;
   position: relative;
-left: 37%;
+left:80%;
 }
 
 .select-pago-titulo h1{
@@ -100,228 +102,240 @@ height: 50%;
 width: 30%;
 }
 
-.form-pago input[type=text] {
-  width: 45%;
-  height: 8%;
+
+
+
+
+
+/* form-pago :)  */
+.body-pago{
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+  width: 400px;
+  height: 450px;
   position: relative;
-  left: 28%;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 2px 0;
-  border: 1px solid #aec6ca;
-  outline: none;
+  top: -60px;
+ margin: 3em auto;
+ border-radius: 5px;
+ background-color: white;
+}
+.payment-form {
+  margin: 2em 1em;
+  position: relative;
+  top: 150px;
 
 
 }
-.form-pago input[type=text]:focus {
-    border: 2px solid #77c1f6;
-}
-
-.form-pago input[type=number] {
-    width: 45%;
-    height: 8%;
-    position: relative;
-    left: 28%;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 2px 0;
-    border: 1px solid #aec6ca;
-    outline: none;
-
-}
-.form-pago input[type=number]:focus {
-    border: 2px solid #77c1f6;
-}
-
-
-.form-pago{
-  text-align: center;
-font-weight:bold;
-}
-
-.form-pago button {
-    width: 45%;
-border-radius: 5px;
-  padding: 6px 4px;
-  color: white;
-  background-color: #00a2ae;
+.payment-form fieldset {
   border: none;
-  margin-top: 10px;
 }
 
-.form-pago button:hover {
-  color: #ddecee;
-  box-shadow: inset 0 0 0 3px #70c3c9;
-
-}
-
-
-
-/* El formulario de envío */
-
-#contenedor {
-  background: #FFF;
-  margin: 1em auto;
-  padding: 1em;
-  width: 768px;
-}
-
-
-.form-envio{
-  font-size: 13px;
-position: relative;
-margin-top: -60px;
- }
-
-.form-envio ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.form-envio ul li {
-  border-top: 1px solid #CCC;
-  width: auto;
-  overflow: hidden;
-}
-
-/* El formulario se organiza en dos columnas, el título y los controles */
-.form-envio ul li label.titulo {
-float: left;
-  font-size: 12px;
-  text-align: right;
-}
-
-.form-envio   ul li div.controles {
-  margin-left: 25%;
-}
-
-
-/* El título de los elementos de la lista */
-.form-envio  ul li label.titulo {
-  font-weight: bold;
-}
-
-.form-envio  ul li div span {
-  float: left;
-}
-
-.form-envio  ul li div span.completo {
+.payment-form input {
   width: 100%;
+  height: 30px;
+  vertical-align: top;
+  border: 2px solid #bcc2c2;
+  border-radius: 3px;
+  font-size: 1.25em;
+  margin: 10px 5px;
+  font-weight: 100;
+  text-indent: 18px;
+  line-height: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.form-envio  ul li div span.mitad {
-  width: 11%;
-}
-
- .form-envio  ul li div span.tercio {
-  width: 20%;
-  height:60%;
-  left: 10%;
-
-}
-
-.form-envio  ul li div span.dostercios {
-  width: 20%;
-     height:60%;
-       left: 80%;
-
-}
-
-/* Como se define display: block, se muestra en la línea siguiente */
-.form-envio   ul li div span label {
-  display: block;
-  font-size: 12px;
-  color: #333;
-}
-
-/* Configuración de los controles del formulario */
-.form-envio  ul li input {
-}
-
-.form-envio  input#apellido1, input#apellido2, input#direccion, input#email,input#nombre {
-  width: 45%;
-  height: 20%;
-
+.payment-form input[type="text"]:hover{
+    border: 2px solid #77c1f6;
 }
 
 
-.form-envio input#email{
-  width: 60%;
-  height: 30%;
+
+
+.payment-form input[type="checkbox"] {
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  width: 1.75em;
 }
 
-.form-envio  input#codigopostal {
-  width: 60%;
-  height: 30%;
+.expiration input{
+position: relative;
+left: -126px;
+top: 14px;
+width: 50%;
+height: 30px;
+
+}
+.security label{
   position: relative;
-  left: 150%;
+  left: 230px;
+  top: -60px;
+  width: 30%;
+  height: 30px;
 }
 
-.form-envio  input#municipio {
-  width: 85%;
-  height: 30%;
+.security input{
   position: relative;
-  left: 50%;
+  left: 90px;
+  top: -46px;
+  width: 40%;
+  height: 30px;
 }
 
-.form-envio  input#pais {
-  width: 150%;
-  height: 30%;
+.check input{
   position: relative;
-  left: 80%;
+  top:-60px;
 }
 
-.form-envio  input#telefonofijo{
-  width: 86%;
-  height: 24%;
+.check label{
   position: relative;
-left: 200%;
+  top:-1px;
 }
-
-
-.form-envio  input#telefonomovil {
-  width: 300%;
-  height: 24%;
+.check span{
   position: relative;
-left: 200%;
+  top:-52px;
 }
 
-/* Cambia el color cuando se sitúa el cursor del ratón */
-.form-envio  ul li:hover {
-  background-color: #ddeaec;
+
+.payment-form button {
+  background-color: #616161;
+  color: white;
+  position: relative;
+  justify-content: center;
+  top: -70px;
+  width: 100%;
+  height: 30px;
+}
+.payment-form button:before {
+ content:'';
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 0px;
+ height: 42px;
+ background: rgba(255,255,255,0.3);
+ border-radius: 5px;
+ transition: all 2s ease;
 }
 
-.form-envio  ul li.botones:hover {
-  background-color: transparent;
-}
-
-/* Destaca el control cuando recibe el foco */
-.form-envio  ul li input, ul li select {
-  border: 1px solid #aec6ca;
-border-radius: 3px;
-}
-
-.form-envio  ul li.botones input {
-  border: 2px solid #CCC;
-}
-
-.form-envio   ul li input:focus, ul li select:focus {
-  border: 2px solid #77c1f6;
-}
-#alta{
-  width: 20%;
-  height: 10%;
-border-radius: 5px;
-padding: 6px 4px;
-color: white;
-background-color: #00a2ae;
-border: none;
-margin-top: 10px;
-}
-
-#alta:hover {
-  color: #ddecee;
-  box-shadow: inset 0 0 0 3px #70c3c9;
+.payment-form button:hover:before{
+ width: 100%;
 
 }
+
+
+
+
+.payment-form label > span {
+  line-height: 1.5em;
+}
+
+
+.card-image {
+  position: relative;
+
+
+}
+
+.card-image img{
+  width: 230px;
+  height: 130px;
+    position: absolute;
+    left: 20%;
+    transition: opacity 1.5s ease-in-out;
+}
+
+ .card-image img.top:hover {
+  opacity: 0;
+}
+
+
+
+
+  /* home pago   */
+
+  .home-pago{
+      width:100%;
+      height:150px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      background-position: center;
+      background-size: center;
+      background-image: url('https://static.pexels.com/photos/315420/pexels-photo-315420.jpeg');
+  }
+
+
+  .back-home-pago{
+      width:100%;
+      height:700px;
+      background-position: center;
+      background-size: center;
+      background-color: #f3f3f3;
+  }
+  .home-pago h2{
+      color:white;
+      position: relative;
+      top: -70%;
+      padding-top: 183px;
+  }
+
+
+  @media screen and (max-width: 420px) {
+
+    .carrito-contenedor{
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    vertical-align: middle;
+    }
+
+    .payment-form {
+      width: 50%;
+      height: 50%;
+
+    }
+
+    .expiration input{
+    position: relative;
+    left: 2px;
+    top: 5px;
+    width: 50%;
+    height: 30px;
+
+    }
+    .security label{
+      position: relative;
+      left: 110px;
+      top: -78px;
+      width: 30%;
+      height: 30px;
+    }
+
+    .security input{
+      position: relative;
+      left: 20px;
+      top: -55px;
+      width: 40%;
+      height: 30px;
+    }
+    .card-image img{
+      top: 20px;
+      width: 100px;
+      height: 100px;
+        position: absolute;
+        left: 18%;
+        transition: opacity 1.5s ease-in-out;
+    }
+    .body-pago{
+
+      top: -50px;
+
+    }
+
+
+
+       }

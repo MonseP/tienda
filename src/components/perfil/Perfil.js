@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Nav from '../nav/Nav';
-import SubMenu from './SubMenu.js';
 import User from './User.js';
 import PerfilPersonal from './PerfilPersonal.js';
 import TabsMenu from './TabsMenu.js';
+import Footer from '../footer/Footer.js';
 
 
 
@@ -23,11 +23,18 @@ class Perfil extends React.Component {
 
           <User/>
 
+
+
+<div  style={{background: '#ECECEC'}}>
       <PerfilPersonal/>
 
 
       <TabsMenu/>
 
+
+</div>
+
+<Footer/>
 
       </div>
        </div>

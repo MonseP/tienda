@@ -12,6 +12,7 @@
     "react-fontawesome": "^1.6.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
+    "react-scrollreveal": "^1.1.2",
     "react-tilt": "^0.1.4",
     "toastr": "^2.1.4",
     "vanilla-tilt": "^1.4.1"

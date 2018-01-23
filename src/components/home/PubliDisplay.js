@@ -6,15 +6,15 @@ export const PubliDisplay = () => {
 
     return (
         <div className="publi">
-            <h2>Gracias a nuestros clientes</h2>
+            <h2 bot>Gracias a nuestros clientes</h2>
             <div className="bflex">
-                <div className="partner">
+                <div className="partner bot">
                     <img  src={img} alt=""/>
                 </div>
-                <div className="partner">
+                <div className="partner bot">
                     <img  src={img} alt=""/>
                 </div>
-                <div className="partner">
+                <div className="partner bot">
                     <img  src={img} alt=""/>
                 </div>
 

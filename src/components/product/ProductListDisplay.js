@@ -8,9 +8,11 @@ export const ProductListDisplay = ({products}) => {
 
     return (
         <div className="productos">
-            <h2 className="titulo">Productos</h2>
-            <hr className="line_blue"/>
-                <Cart />
+            <h2 className="titulo bot">Productos</h2>
+            <hr className="line_blue right"/>
+            <div className="left">
+                <Cart  />
+            </div>
         </div>
     );
 }

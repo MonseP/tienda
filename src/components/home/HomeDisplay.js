@@ -6,30 +6,60 @@ import Nav from '../nav/Nav';
 import {PubliDisplay} from './PubliDisplay';
 import Contacto from '../../components/contacto/Contacto';
 import Footer from '../footer/Footer';
-import logo from '../../assets/tienda_logo_blanco.png';
-import FontAwesome from 'react-fontawesome';
-import {Link} from 'react-router-dom';
-class HomeDisplay extends Component {
+import sr from './scrollReveal.js';
 
+import {SlideDisplay} from './SlideDisplay';
+
+class HomeDisplay extends Component {
+    componentDidMount () {
+        window.scroll(0, 0)
+        const config = {
+            origin: 'right',
+            duration: 1000,
+            delay: 150,
+            distance: '100%',
+            scale: 1,
+            easing: 'ease',
+        }
+
+        const config2 = {
+            origin: 'left',
+            duration: 1000,
+            delay: 150,
+            distance: '100%',
+            scale: 1,
+            easing: 'ease',
+        }
+        const config3 = {
+            origin: 'bottom',
+            duration: 800,
+            delay: 100,
+            distance: '100%',
+            scale: 1,
+            easing: 'ease',
+        }
+        const config4 = {
+            origin: 'top',
+            duration: 800,
+            delay: 100,
+            distance: '100%',
+            scale: 1,
+            easing: 'ease',
+        }
+
+        sr.reveal('.right', config2);
+        sr.reveal('.left', config);
+        sr.reveal('.bot', config3);
+        sr.reveal('.top', config4);
+
+
+
+
+    }
     render() {
     return (
             <div>
-                <div className="home_back">
-
-
-                        <div className="home_data">
-                            <img src={logo} alt=""/>
-                            <h3>WELLNES SYSTEM FOOD INNOVATION</h3>
-                            <hr className="line_white"/>
-                            <p>PRODUCTOS INTELIGENTES PARA TU BIENESTAR</p>
-                            <button className="btn_home">Nosotros</button>
-                            <br/>
-                            <Link to="/">
-                                <FontAwesome  className="fa_home" name="chevron-down" />
-                            </Link>
-                        </div>
-
-                </div>
+              <SlideDisplay />
                 <Nav />
                 <AboutDisplay />
                 <Product />

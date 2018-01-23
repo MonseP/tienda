@@ -1,5 +1,6 @@
 .contacto{
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    background-color: white;
 }
 .map, .formu{
     width:80%;
@@ -7,10 +8,11 @@
 }
 
 .formu{
-    margin-top: 50px;
+    padding-top: 50px;
     text-align: center;
 }
 .formu h3{
+    margin: 0;
     text-align: center;
     font-size: 25px;
     margin-bottom: 50px;
@@ -46,7 +48,6 @@ form textarea{
 }
 .btn_form{
     width:20%;
-
     background-color: #1C7E7A;
     border-radius: 0;
     border:transparent;

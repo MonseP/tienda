@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-
+import {Link} from 'react-router-dom';
 import { Parallax } from 'react-scroll-parallax';
 
 export const NosotrosDisplay = () => {
@@ -25,7 +25,9 @@ export const NosotrosDisplay = () => {
                 </p>
                 <p>Zullen we beginnen?</p>
                 <br/>
-                <button className="btn_explore">Explorar</button>
+                <Link to="/catalogo">
+                    <button className="btn_explore">Explorar</button>
+                </Link>
             </div>
             </Parallax>
         </div>

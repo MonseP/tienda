@@ -67,6 +67,7 @@ class HomeDisplay extends Component {
                 <NosotrosDisplay />
                 <RelevantesDisplay />
                 <SendDisplay/>
+                <PubliDisplay/>
             </div>
         );
     }

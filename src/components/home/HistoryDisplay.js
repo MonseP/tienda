@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { Parallax } from 'react-scroll-parallax';
-import logo_azul from '../../assets/logo_prana_azul.png';
+import logo_azul from '../../assets/logo_prana_verde.png';
 
 export const HistoryDisplay = () => {
 
@@ -50,8 +50,8 @@ export const HistoryDisplay = () => {
             <div className="" style={{display:"flex"}}>
                 <Parallax
                     className="custom-class"
-                    offsetXMax={160}
-                    offsetxMin={-70}
+                    offsetXMax={170}
+                    offsetxMin={-100}
                     slowerScrollRate
                     tag="figure"
                 >
@@ -59,8 +59,8 @@ export const HistoryDisplay = () => {
                 </Parallax>
                 <Parallax
                     className="custom-class"
-                    offsetXMax={-160}
-                    offsetxMin={30}
+                    offsetXMax={-140}
+                    offsetxMin={150}
                     slowerScrollRate
                     tag="figure"
                 >

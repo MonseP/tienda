@@ -67,7 +67,7 @@ a{
 /*#Nosotros*/
 .nosotros{
     background-color: white;
-    padding: 5rem 0;
+    padding: 4rem 0 6rem 0;
 }
 .nos_text{
     width:50%;
@@ -101,9 +101,10 @@ a{
 /*Relevantes*/
 
 .relevantes{
-    /*background-color: rgb(244, 242, 242);*/
-    background-color: white;
-    padding-top: 100px;
+
+    background-color: rgb(244, 242, 242);
+    /*background-color: white;*/
+    padding-top: 150px;
 }
 .rel_box{
     width:80%;
@@ -286,33 +287,62 @@ a{
     /*color:inherit;*/
 /*}*/
 
-/*!*Publi*!*/
-/*.publi{*/
-    /*background-color: #444444;*/
-    /*height:350px;*/
-    /*width:100%;*/
-    /*text-align: center;*/
-    /*padding-bottom: 0;*/
-/*}*/
-/*.publi h2{*/
-    /*color:white;*/
-    /*font-size: 250%;*/
-    /*padding-top: 3%;*/
-/*}*/
-/*.bflex{*/
-    /*width:70%;*/
-    /*margin: 50px auto;*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-/*}*/
-/*.partner{*/
-    /*width:250px;*/
-    /*flex-grow: 1;*/
-/*}*/
-/*.partner img{*/
-    /*width:120px;*/
-    /*height:auto;*/
-/*}*/
+/*Publi*/
+.publi{
+    background-image: url('https://images.pexels.com/photos/612891/pexels-photo-612891.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
+    height:270px;
+    width:100%;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+.publi ::placeholder { color: white; }
+.publi h3{
+    color:white;
+    font-size: 200%;
+
+    margin: 0;
+}
+.box_publi{
+
+    background-color: white;
+}
+.div_input{
+    color:white;
+    width:160px;
+    border:1px solid white;
+    height:30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding:0 1%;
+}
+.inp{
+    border: none;
+    background-color: transparent;
+
+}
+.div_input input:active{
+    color:inherit;
+}
+.bflex{
+    width:70%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partner{
+    width:250px;
+    flex-grow: 1;
+}
+.partner img{
+    width:120px;
+    height:auto;
+}
 /*!*Info*!*/
 /*.info_text{*/
     /*width:70%;*/

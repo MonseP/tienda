@@ -1,23 +1,38 @@
 import React from 'react';
 import './Home.css';
+import img from '../../assets/img.png';
+import circle from '../../assets/logo_prana_rgb-06.png';
 
 export const AboutDisplay = () => {
 
     return (
         <div id="about">
             <div className="about">
-                <h2 className="titulo">Sobre nosotros...</h2>
+                <h2 className="titulo bot">Nosotros</h2>
+                <hr className="line_blue right"/>
                 <br/>
-                <p className="texto">Porque somos apasionados por el cuidado del medio ambiente y el
-                    bienestar de las personas ofreciéndoles alternativas para hacer su alimentación
-                    más saludable y su estilo de vida más armónico con la naturaleza, apoyando en el
-                    camino a pequeños productores
+                <p className="texto bot">"DEJA QUE EL ALIMENTO <br/> SEA TU ÚNICA MEDICINA"
                 </p>
+                <p className="cita bot">- Hipócrates -</p>
                 <br/>
-                <p className="texto">Ofrecemos alimentos frescos, básicos caseros como salsas, cortidos
-                    y mermeladas. También ofrecemos una gran variedad de alimentos artesanales,
-                    artículos para el hogar y suplementos alimenticios.
-                </p>
+                <div className="flexi">
+                    <div className="box_about left">
+                        <img src={circle} alt=""/>
+                        <h3>MISIÓN</h3>
+                        <p>Democratizar la salud, por medio de los alimentos saludables</p>
+                    </div>
+                    <div className="box_about top">
+                        <img src={circle} alt=""/>
+                        <h3>VISIÓN</h3>
+                        <p>Ser el amazon de los alimentos saludables</p>
+                    </div>
+                    <div className="box_about right">
+                        <img src={circle} alt=""/>
+                        <h3>VALORES</h3>
+                        <p>Compromiso con la salud de nuestros clientes a traves de productos de calidad</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     );

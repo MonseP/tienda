@@ -9,7 +9,7 @@ export const CartDisplay = ({id, img, name, desc, photos, price, text, info}) =>
     else img = photos[0];
 
     return (
-        <div className="cart">
+        <div className="cart bot">
             <Link to={`/catalogo/${id}`} style={{color:"inherit"}}>
             <div className="cart_img ">
                 <img  src={img} alt=""/>

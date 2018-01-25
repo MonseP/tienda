@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contacto.css';
-import Nav from '../nav/Nav';
+import Nav from '../nav/NavDisplay';
 import FontAwesome from 'react-fontawesome';
 
 

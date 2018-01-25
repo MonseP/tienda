@@ -1,12 +1,12 @@
 import React from 'react';
 import './Product.css';
-import Nav  from '../nav/Nav';
+import Nav  from '../nav/NavDisplay';
 
 export const ProductDetailDisplay = ({name, desc, price,photos, info}) => {
 
     return (
         <div className="detalle">
-            <Nav />
+
             <div className="box_detail">
                 <div className="detail">
                     <div className="img_product">

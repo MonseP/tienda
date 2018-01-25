@@ -1,29 +1,13 @@
 .footer{
-    background-color: #444444;
+    background-color: white;
     width:100%;
     height:auto;
     padding-bottom: 20px;
     padding-top: 50px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-}
-.footer img{
-    width:120px;
-}
-.redes{
-    margin-top: 50px;
-    text-align: center;
-}
-.redes span{
-    margin: 0 20px;
-}
-.footer_section{
-    color:#7E7D7D;
-    width:50%;
-    margin: 30px auto;
-    display: flex;
-    justify-content: space-between;
 }

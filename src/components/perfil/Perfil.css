@@ -1,11 +1,11 @@
 .avatar-user{
   width:100%;
-  height:200px;
+  height:250px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-position: center;
-  background-size: center;
-  background-image: url('https://images.pexels.com/photos/15964/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+  background-size: cover;
+  background-image: url('https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
 }
 
 .avatar{
@@ -15,16 +15,21 @@
 border-style:  ridge ;
 border-color: white;
   position: relative;
-     top:70px;
+     top:130px;
      right:40%;
      overflow:hidden;
 }
 
-
+.perfil_user{
+    width:80%;
+    margin: 0 auto;
+}
 .avatar:hover {
 -webkit-transform:scale(1.3);transform:scale(1.3);
 }
-
+.back{
+    display: flex;
+}
 
 
 .avatar-user h1{
@@ -158,14 +163,27 @@ top:150px;
    text-align: center;
   background-color: white;
 }
+.box_tab{
+    background-color: white;
+    width:70%;
+    margin-top: 90px;
+    padding: 2%;
+}
+.fle{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*.tabs{*/
+  /*position: relative;*/
+  /*top:-200px;*/
+  /*left: 30%;*/
+/*justify-content: center;*/
+/*width: 600px;*/
 
-.tabs{
-  position: relative;
-  top:-200px;
-  left: 30%;
-justify-content: center;
-width: 600px;
-
+/*}*/
+.box_back{
+    width:80%;
+    margin: 0 auto;
 }
 
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../nav/Nav';
 import User from './User.js';
 import PerfilPersonal from './PerfilPersonal.js';
 import TabsMenu from './TabsMenu.js';
@@ -11,32 +10,11 @@ class Perfil extends React.Component {
 
   render() {
     return (
-
-
-      <div>
-
-
-<Nav/>
-
-      <div >
-
-
-          <User/>
-
-
-
-<div  style={{background: '#ECECEC'}}>
-      <PerfilPersonal/>
-
-
-      <TabsMenu/>
-
-
-</div>
-
-<Footer/>
-
-      </div>
+      <div style={{background: '#ECECEC', paddingBottom:"100px"}}>
+                <User/>
+                <div className="box_back fle">
+                    <PerfilPersonal/>
+                </div>
        </div>
     );
   }

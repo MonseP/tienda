@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Carrito.css';
-import Nav from '../nav/Nav';
 import Carrito from './Carrito.js';
 
 
@@ -14,7 +13,6 @@ class CarritoHome extends React.Component {
       <div className="carrito">
     <body>
 
-<Nav/>
 <div >
 
   <div className="home-pago">

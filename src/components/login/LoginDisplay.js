@@ -13,7 +13,7 @@ export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error
                 </div>
                 <div className="circle_g" onClick={loginGoogle}>
                     <FontAwesome name="google" />
-
+                </div>
                 <div className="card_login">
                     <h3>Iniciar sesión</h3>
                     <h1>{error}</h1>
@@ -39,8 +39,8 @@ export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error
                     </div>
                     <p className="ayuda"><a onClick={changeRegistro} href="#!">Crear una cuenta</a></p>
 
-
-
+                </div>
+                </div>
         </div>
     </div>
 );

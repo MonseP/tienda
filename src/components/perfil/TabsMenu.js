@@ -20,16 +20,16 @@ class TabsMenu extends React.Component {
       console.log(key);
     }
     return (
-<div className='tabs'>
-      <Tabs defaultActiveKey="1" onChange={callback}>
-          <TabPane tab="Pedidos" key="1"> <PerfilPedidos/> </TabPane>
-          <TabPane tab="Dirección" key="2"><PerfilDirecciones/> </TabPane>
-          <TabPane tab="Tab 3" key="3">Content of Tab Pane 3</TabPane>
-        </Tabs>
+        <div className="box_tab">
+            <div className='tabs'>
+                  <Tabs defaultActiveKey="1" onChange={callback}>
+                      <TabPane tab="Última orden" key="1"> <PerfilPedidos/> </TabPane>
+                      <TabPane tab="Historial" key="3">Content of Tab Pane 3</TabPane>
+                      <TabPane tab="Información de envío" key="2"><PerfilDirecciones/> </TabPane>
 
-
-</div>
-
+                  </Tabs>
+            </div>
+        </div>
 
 
 

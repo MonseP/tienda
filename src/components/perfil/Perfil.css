@@ -12,7 +12,7 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
-border-style:  ridge ;
+border-style:solid ;
 border-color: white;
   position: relative;
      top:70px;
@@ -43,10 +43,10 @@ justify-content: center;
 
 .form-perfil-direccion{
   display:flex;
-  order: 1;
   flex-direction:column;
 font-family: 'Montserrat', sans-serif;
   width: 80%;
+  height:600px;
 right: -10%;
 padding-left: 60px;
   border-radius: 5px;
@@ -56,11 +56,15 @@ padding-left: 60px;
  background-color: white;
 }
 
-
+.form-direccion{
+  top: 40px;
+  position: relative;
+}
 
 .form-perfil-direccion input[type=text] {
+
   width: 45%;
-  height: 8%;
+  height: 9%;
   position: relative;
   left: 28%;
   border-radius: 5px;
@@ -78,7 +82,7 @@ padding-left: 60px;
 
 .form-perfil-direccion input[type=number] {
     width: 45%;
-    height: 8%;
+    height: 9%;
     position: relative;
     left: 28%;
     border-radius: 5px;

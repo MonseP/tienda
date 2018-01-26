@@ -20,7 +20,7 @@
 .table button{
   position: relative;
   left: 25%;
-background-color: #00a2ae;
+background-color: #1c7e7a;
 color: white;
 }
 
@@ -28,7 +28,7 @@ color: white;
 
  background: rgba(0,0,0,0);
  color: #3a7999;
- box-shadow: inset 0 0 0 3px #30b4be;
+ box-shadow: inset 0 0 0 3px #26928e;
 
 }
 
@@ -41,7 +41,7 @@ width: 27px;
 height: 27px;
 margin: 0;
 float: left;
-background-color: #00a2ae;
+background-color: #1c7e7a;
 }
 
 #minus2{
@@ -68,7 +68,7 @@ width: 27px;
 height: 27px;
 margin: 0;
 float: left;
-background-color: #00a2ae;
+background-color: #1c7e7a;
 }
 
 .table img{

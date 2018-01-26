@@ -10,12 +10,32 @@ class Perfil extends React.Component {
 
   render() {
     return (
-      <div style={{background: '#ECECEC', paddingBottom:"100px"}}>
-                <User/>
-                <div className="box_back fle">
-                    <PerfilPersonal/>
-                </div>
-       </div>
+
+      <div>
+
+
+<Nav/>
+
+      <div >
+
+
+          <User/>
+
+
+
+<div  className="perfil-completo" style={{background: '#ECECEC'}}>
+      <PerfilPersonal/>
+
+
+      <TabsMenu/>
+
+
+</div>
+
+<Footer/>
+
+      </div>
+
     );
   }
 }

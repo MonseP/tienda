@@ -12,11 +12,13 @@ class PerfilDirecciones extends React.Component {
 
 
       <div>
+
+        <h3>Agregue su dirección particular</h3>
+
         <div className="form-perfil-direccion">
 
-          <h3>Agregue su dirección particular</h3>
-          <br/>
-              <form>
+
+              <form className="form-direccion">
                 <label for="fname">Nombre del Responsable</label>
                 <input type="text" placeholder="Nombre" />
                 <label >País</label>
@@ -27,10 +29,10 @@ class PerfilDirecciones extends React.Component {
                     <input type="text"  placeholder="Municipio"/>
 
                 <label >Número interior</label>
-                <input type="number" placeholder="Número interior"/>
+                <input type="number" placeholder="Int."/>
 
                 <label >Número exterior</label>
-                <input type="number" placeholder="Número interior"/>
+                <input type="number" placeholder="Ext."/>
 
                         <label >Código Postal</label>
                         <input type="number" placeholder="C.P."/>

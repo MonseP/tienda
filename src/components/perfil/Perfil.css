@@ -1,4 +1,14 @@
+.perfil-completo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+}
+
 .avatar-user{
+
   width:100%;
   height:250px;
   font-family: 'Montserrat', sans-serif;
@@ -7,12 +17,15 @@
   background-size: cover;
   background-image: url('https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
 }
-
 .avatar{
+  display: flex;
+  flex-direction: column;
+justify-content: flex-start;
+  flex-wrap: wrap;
   height: 150px;
   width: 150px;
   border-radius: 50%;
-border-style:  ridge ;
+border-style:solid ;
 border-color: white;
   position: relative;
      top:130px;
@@ -32,26 +45,33 @@ border-color: white;
 }
 
 
-.avatar-user h1{
-position: relative;
-   top:50%;
-justify-content: center;
-   color: white;
-
+left: 10%;
+     top:60px;
+     overflow:hidden;
 }
 
+.avatar:hover {
+-webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+
+.avatar-user h1{
+  position: relative;
+  top:50%;
+  justify-content: center;
+   color: white;
+}
 .submenu-position{
   margin: 0 auto;
   position: absolute;
    top: 10%;
 }
-
 .form-perfil-direccion{
-  display:flex;
-  order: 1;
-  flex-direction:column;
+  display: -webkit-flex;
+-webkit-justify-content: space-around;
 font-family: 'Montserrat', sans-serif;
   width: 80%;
+  height:425px;
 right: -10%;
 padding-left: 60px;
   border-radius: 5px;
@@ -61,11 +81,15 @@ padding-left: 60px;
  background-color: white;
 }
 
+.form-direccion{
+  top: 40px;
 
+}
 
 .form-perfil-direccion input[type=text] {
+
   width: 45%;
-  height: 8%;
+  height: 9%;
   position: relative;
   left: 28%;
   border-radius: 5px;
@@ -83,7 +107,7 @@ padding-left: 60px;
 
 .form-perfil-direccion input[type=number] {
     width: 45%;
-    height: 8%;
+    height: 9%;
     position: relative;
     left: 28%;
     border-radius: 5px;
@@ -138,6 +162,7 @@ padding-left: 60px;
 
 /* tabla de ant:  */
 .custom-filter-dropdown {
+
   padding: 8px;
   border-radius: 6px;
   background: #fff;
@@ -155,32 +180,22 @@ padding-left: 60px;
 
 /* pedidos form:  */
 .pedidos-table{
-  width: 65%;
+width: 120%;
   height: 50%;
-  position: relative;
-top:150px;
-   left:25%;
-   text-align: center;
+  top:150px;
+  left:25%;
+  text-align: center;
   background-color: white;
 }
-.box_tab{
-    background-color: white;
-    width:70%;
-    margin-top: 90px;
-    padding: 2%;
-}
-.fle{
-    display: flex;
-    flex-wrap: wrap;
-}
-/*.tabs{*/
-  /*position: relative;*/
-  /*top:-200px;*/
-  /*left: 30%;*/
-/*justify-content: center;*/
-/*width: 600px;*/
 
-/*}*/
+.tabs{
+  position: relative;
+  top:-200px;
+  left: 30%;
+justify-content: center;
+width: 600px;
+
+}
 .box_back{
     width:80%;
     margin: 0 auto;
@@ -214,28 +229,3 @@ placeholder:none;
   height: 50px;
   width: 50px;
   font-size: 10px;
-
-
-}
-
-.avatar{
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-border-style:  ridge ;
-border-color: white;
-  position: relative;
-     top:110px;
-    left: -2%;
-     overflow:hidden;
-}
-.back{
-  position: relative;
-  top: -30px;
-  left: 50px;
-
-}
-
-
-
-        }

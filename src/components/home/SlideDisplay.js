@@ -22,7 +22,7 @@ export const SlideDisplay = () => {
                     <FontAwesome  className="fa_home top" name="chevron-down" />
                     </a>
                 </div>
-                <video id='bg-video' autoPlay="autoplay" loop  >
+                <video id='bg-video' autoPlay="autoplay" loop muted >
                     <source src={video} type="video/mp4" />
                 </video>
         </div>

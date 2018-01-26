@@ -42,7 +42,7 @@
     line-height: 1.8rem;
 
 }
-input:focus{
+input:focus, textarea:focus{
     outline: none;
 }
 .nos_text p{

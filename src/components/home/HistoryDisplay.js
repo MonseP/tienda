@@ -27,10 +27,7 @@ export const HistoryDisplay = () => {
                     >
                     <div className="card_history">
                         <h3>Prana</h3>
-                        <p>With the increasing need for your furniture to be flexible,
-                            Myriad allows you to create a comfortable meeting area,
-                            private huddle space or a stunning island. The opportunities
-                            are truly infinite with this versatile range.
+                        <p>Somos expertos en nutrición y en la generación de sistemas de cambio
                             <br/>
                             <br/>
                             Myriad is a diverse selection of upholstered modular furniture,
@@ -42,7 +39,6 @@ export const HistoryDisplay = () => {
                             You become the designer with Myriad, arranging modules to create
                             any shape you desire. And, if you need help, our team is always
                             on hand with suggestions to style your space.
-
                         </p>
                     </div>
                     </Parallax>

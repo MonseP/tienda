@@ -15,7 +15,7 @@ class PerfilDatos extends React.Component {
 
           <h3>Agregue su dirección particular</h3>
           <br/>
-              <form>
+              <form  className="form-direccion" >
                 <label for="fname">Nombre del Responsable</label>
                 <input type="text" placeholder="Nombre" />
                 <label >País</label>

@@ -8,7 +8,7 @@ height: 50%;
 width: 70%;
 margin: 0 auto;
 position: absolute;
- top: 17%;
+ top: 30%;
  left: 15%;
  vertical-align: middle;
 
@@ -283,6 +283,14 @@ height: 30px;
 
   @media screen and (max-width: 420px) {
 
+
+    .body-pago{
+
+      width: 400px;
+      height: 483px;
+
+    }
+
     .carrito-contenedor{
     height: 50%;
     width: 70%;
@@ -309,7 +317,7 @@ height: 30px;
     }
     .security label{
       position: relative;
-      left: 110px;
+      left: 130px;
       top: -78px;
       width: 30%;
       height: 30px;
@@ -317,8 +325,8 @@ height: 30px;
 
     .security input{
       position: relative;
-      left: 20px;
-      top: -55px;
+      left: 120px;
+      top: -73px;
       width: 40%;
       height: 30px;
     }
@@ -336,6 +344,22 @@ height: 30px;
 
     }
 
+    .check label{
+      position: relative;
+      justify-content: center;
+      top:-20px;
+    }
+    .carrito-contenedor {
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+    position: absolute;
+     top: 35%;
+     left: 15%;
+     vertical-align: middle;
+
+
+    }
 
 
        }

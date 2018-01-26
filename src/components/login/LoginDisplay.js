@@ -4,16 +4,7 @@ import './Login.css';
 
 export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error, changeRegistro, loginGoogle, loginFacebook}) => (
     <div className="login">
-        <div className="card_login">
-            <h3>Iniciar sesión</h3>
-            <h1>{error}</h1>
-            <div className="redes_login">
-                <div className="circle_f" onClick={loginFacebook}>
-                    <FontAwesome name="facebook" />
-                </div>
-                <div className="circle_g" onClick={loginGoogle}>
-                    <FontAwesome name="google" />
-                </div>
+
                 <div className="card_login">
                     <h3>Iniciar sesión</h3>
                     <h1>{error}</h1>
@@ -41,6 +32,5 @@ export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error
 
                 </div>
                 </div>
-        </div>
-    </div>
+
 );

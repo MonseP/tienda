@@ -9,7 +9,7 @@ import Admin from './components/admin/Admin';
 import CarritoHome from './components/carrito/CarritoHome';
 import Perfil from './components/perfil/Perfil';
 import Editar from './components/perfil/EditarDatos/Editar';
-
+import Politicas from './components/footer/Politicas';
 
 export const Routes = () => (
     <Switch>
@@ -21,6 +21,7 @@ export const Routes = () => (
         <Route path="/admin" component={Admin} />
         <Route exact path="/carrito" component={CarritoHome} />
         <Route path="/perfil" component={Perfil} />
+            <Route path="/politicas-de-privacidad" component={Politicas}/>
         <Route path="/editarperfil" component={Editar} />
 
 

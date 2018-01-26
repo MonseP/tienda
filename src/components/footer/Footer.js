@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Footer.css';
 import FontAwesome from 'react-fontawesome';
 import img from '../../assets/logo_prana_rgb-06.png';
+import {Link} from 'react-router-dom';
 
 class Footer extends Component {
     render() {
@@ -27,7 +28,9 @@ class Footer extends Component {
                         <hr className="line_green"/>
                         <span>Formas de Pago</span>
                         <br/>
-                        <span>Politicas de Privacidad</span>
+                        <Link to="/politicas-de-privacidad">
+                            <span>Politicas de Privacidad</span>
+                        </Link>
                     </div>
                     <div>
                         <h4>Conecta con nosotros</h4>

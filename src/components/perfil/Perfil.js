@@ -25,7 +25,7 @@ class Perfil extends React.Component {
 
 
 
-<div  style={{background: '#ECECEC'}}>
+<div  className="perfil-completo" style={{background: '#ECECEC'}}>
       <PerfilPersonal/>
 
 

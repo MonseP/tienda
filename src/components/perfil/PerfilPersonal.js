@@ -16,8 +16,8 @@ class PerfilPersonal extends React.Component {
 
 
 <div  className="back">
-          <div style={{padding: '30px' }}>
-              <Card title="Montserrat Plata" bordered={false} style={{ width: 200 ,top:'60px'}}>
+          <div style={{padding: '5px' }}>
+              <Card title="Montserrat Plata" bordered={false} style={{ width: 200 ,top:'5px'}}>
                 <p>Email: monse@gmail.com</p>
                 <p>Nombre: Montserrat Plata</p>
                 <p>Usuario:P72727</p>

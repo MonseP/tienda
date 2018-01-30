@@ -20,16 +20,16 @@ class Perfil extends React.Component {
 
       <div >
 
-
+<div  className="perfil-completo" style={{background: '#ECECEC'}}>
           <User/>
 
 
 
-<div  className="perfil-completo" style={{background: '#ECECEC'}}>
+
       <PerfilPersonal/>
 
 
-      <TabsMenu/>
+    <TabsMenu/>
 
 
 </div>

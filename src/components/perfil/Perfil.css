@@ -1,7 +1,8 @@
 .perfil-completo{
+  margin: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+flex-direction: row;
+  justify-content:flex-start;
   flex-wrap: wrap;
 
 
@@ -9,8 +10,9 @@
 
 .avatar-user{
 
+top: 100px;
   width:100%;
-  height:200px;
+  height:240px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-position: center;
@@ -18,18 +20,15 @@
   background-image: url('https://images.pexels.com/photos/15964/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
 }
 .avatar{
-  display: flex;
-  flex-direction: column;
-justify-content: flex-start;
-  flex-wrap: wrap;
-  height: 150px;
+  position: absolute;
+  left: 3%;
+height: 150px;
   width: 150px;
   border-radius: 50%;
 border-style:solid ;
 border-color: white;
-left: 10%;
-     top:60px;
-     overflow:hidden;
+top:140px;
+
 }
 
 .avatar:hover {
@@ -47,32 +46,38 @@ left: 10%;
   position: absolute;
    top: 10%;
 }
-.form-perfil-direccion{
-  display: -webkit-flex;
--webkit-justify-content: space-around;
+
+/* form-direccion   */
+.form-direccion{
+  width: %;
+  height:380px;
+}
+.form-perfil-direccion-titulo h3{
 font-family: 'Montserrat', sans-serif;
-  width: 80%;
-  height:425px;
-right: -10%;
-padding-left: 60px;
+font-size: 16px;
+text-align: center;
+margin-bottom: 10px;
+}
+.form-perfil-direccion{
+font-family: 'Montserrat', sans-serif;
+margin-bottom:10px;
+right: 10%;
+padding-left: 50px;
   border-radius: 5px;
   position: relative;
  text-align: left;
  font-weight:bold;
- background-color: white;
-}
-
-.form-direccion{
-  top: 40px;
+ background-covlor: white;
 
 }
+
 
 .form-perfil-direccion input[type=text] {
 
-  width: 45%;
-  height: 9%;
+  width:60%;
+  height: 9%;d
   position: relative;
-  left: 28%;
+  left: 20%;
   border-radius: 5px;
   padding: 5px 10px;
   margin: 2px 0;
@@ -90,7 +95,7 @@ padding-left: 60px;
     width: 45%;
     height: 9%;
     position: relative;
-    left: 28%;
+    left: 20%;
     border-radius: 5px;
     padding: 5px 10px;
     margin: 2px 0;
@@ -108,7 +113,7 @@ padding-left: 60px;
   position: relative;
   left: 15%;
   top:-4px;
-  width: 60%;
+  width: 50%;
   background-color: #616161;
   border-radius: 0;
   border: transparent;
@@ -128,14 +133,14 @@ padding-left: 60px;
  position: absolute;
  top: 0px;
  left: 0px;
- width: 0px;
+ wicfdth: 0px;
  height: 35px;
  background: rgba(255,255,255,0.3);
  border-radius: 5px;
  transition: all 2s ease;
 }
 
-.form-perfil-direccion button:hover:before{
+.fobrm-perfil-direccion button:hover:before{
  width: 100%;
 
 }
@@ -161,21 +166,35 @@ padding-left: 60px;
 
 /* pedidos form:  */
 .pedidos-table{
-width: 120%;
   height: 50%;
   top:150px;
   left:25%;
   text-align: center;
   background-color: white;
 }
-
 .tabs{
-display: flex;
-flex-direction: row;
-justify-content:space-around;
-flex-wrap: wrap;
-  top:-10px;
-width:1000px;
+width: 70%;
+margin-top: 28px;
+margin-bottom: 15px;
 
+}
+
+.back{
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width: 420px) {
+  .avatar{
+    position: absolute;
+    left:10%;
+  height: 90px;
+    width: 90px;
+    border-radius: 50%;
+  border-style:solid ;
+  border-color: white;
+  top:35%;
+
+  }
 
 }

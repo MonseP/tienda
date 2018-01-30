@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import Nav from '../../nav/Nav';
+import Footer from '../../footer/Footer';
 import User from '../User.js';
 
 import './Editar.css';
@@ -49,7 +50,10 @@ class Editar extends React.Component {
 
                                   </form>
                             </div>
-                           </div>       </div>
+                           </div>
+
+                            <Footer/>
+                             </div>
 
     );
   }

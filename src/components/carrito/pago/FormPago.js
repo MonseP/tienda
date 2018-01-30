@@ -34,7 +34,7 @@ class FormPago extends React.Component {
 
             <div className="security">
             <label>Código de seguridad</label>
-            <input maxlength="4" minlength="2" pattern="[0-9]*" placeholder="1234" type="text"/>
+            <input maxlength="4" minlength="2" pattern="[0-9]*" placeholder="CVV" type="text"/>
             </div>
 
 

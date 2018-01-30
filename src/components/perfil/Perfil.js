@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../nav/Nav';
 import User from './User.js';
 import PerfilPersonal from './PerfilPersonal.js';
 import TabsMenu from './TabsMenu.js';
@@ -11,7 +10,6 @@ class Perfil extends React.Component {
 
   render() {
     return (
-
 
       <div>
 
@@ -37,7 +35,7 @@ class Perfil extends React.Component {
 <Footer/>
 
       </div>
-       </div>
+
     );
   }
 }

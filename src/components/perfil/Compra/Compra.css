@@ -1,0 +1,15 @@
+.compra-actual img{
+  width: 100px;
+  height: 100px;
+font-family: 'Roboto', sans-serif;
+}
+
+
+#des{
+  position:relative;
+  text-align: justify;
+  top: -70px;
+  margin-left: 50%;
+
+
+}

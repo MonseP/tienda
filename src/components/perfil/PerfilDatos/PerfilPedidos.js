@@ -98,7 +98,7 @@ class PerfilPedidos extends React.Component {
       }],
       onFilter: (value, record) => record.address.indexOf(value) === 0,
     }];
-    return <Table columns={columns} dataSource={this.state.data} style={{background: 'white'}}/>;
+    return <Table className="pedidos-table" columns={columns} dataSource={this.state.data} style={{background: 'white'}}/>;
 
 
   }

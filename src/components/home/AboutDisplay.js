@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import img from '../../assets/img.png';
-import circle from '../../assets/logo_prana_rgb-06.png';
+import circle from '../../assets/logo_prana_verde.png';
 
 export const AboutDisplay = () => {
 

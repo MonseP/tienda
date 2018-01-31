@@ -1,8 +1,9 @@
 .perfil-completo{
   margin: 0;
+
   display: flex;
 flex-direction: row;
-  justify-content:flex-start;
+justify-content: flex-start;
   flex-wrap: wrap;
 
 
@@ -16,8 +17,8 @@ top: 100px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-position: center;
-  background-size: center;
-  background-image: url('https://images.pexels.com/photos/15964/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+  background-size: cover;
+  background-image: url('https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
 }
 .avatar{
   position: absolute;
@@ -34,6 +35,7 @@ top:140px;
 .avatar:hover {
 -webkit-transform:scale(1.3);transform:scale(1.3);
 }
+
 
 .avatar-user h1{
   position: relative;
@@ -166,16 +168,17 @@ padding-left: 50px;
 
 /* pedidos form:  */
 .pedidos-table{
-  height: 50%;
-  top:150px;
-  left:25%;
-  text-align: center;
-  background-color: white;
+max-width: 120%;
+max-height: 90%;
 }
+/* tabs */
 .tabs{
-width: 70%;
+  position: relative;
+  top: -10px;
+width: 60%;
 margin-top: 28px;
-margin-bottom: 15px;
+margin-left: 10px;
+margin-bottom: 20px;
 
 }
 
@@ -196,5 +199,4 @@ margin-bottom: 15px;
   top:35%;
 
   }
-
 }

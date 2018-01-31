@@ -8,6 +8,9 @@ class ProductDetail extends Component{
 
         }
     }
+    componentDidMount () {
+        window.scroll(0, 0)
+    };
     componentWillMount () {
         console.log(this.props.match.params.id);
         firebase.database().ref("products").child(this.props.match.params.id)

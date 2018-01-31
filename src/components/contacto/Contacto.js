@@ -10,7 +10,7 @@ class Contacto extends Component {
             origin: 'right',
             duration: 1000,
             delay: 150,
-            distance: '100%',
+            distance: '50%',
             scale: 1,
             easing: 'ease',
         }
@@ -19,7 +19,7 @@ class Contacto extends Component {
             origin: 'left',
             duration: 1000,
             delay: 150,
-            distance: '100%',
+            distance: '50%',
             scale: 1,
             easing: 'ease',
         }
@@ -27,7 +27,7 @@ class Contacto extends Component {
             origin: 'bottom',
             duration: 800,
             delay: 100,
-            distance: '100%',
+            distance: '50%',
             scale: 1,
             easing: 'ease',
         }
@@ -35,7 +35,7 @@ class Contacto extends Component {
             origin: 'top',
             duration: 800,
             delay: 100,
-            distance: '100%',
+            distance: '50%',
             scale: 1,
             easing: 'ease',
         }
@@ -51,7 +51,7 @@ class Contacto extends Component {
     }
     render() {
         return (
-            <div>
+            <div id="contacto">
                 <ContactoDisplay />
             </div>
         );

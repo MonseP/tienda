@@ -2,20 +2,23 @@ import React, { Component } from 'react';
 import './Home.css';
 import {AboutDisplay} from './AboutDisplay';
 import Product from '../product/Product';
-import Nav from '../nav/Nav';
+import NavContainer from '../nav/NavContainer';
 import {PubliDisplay} from './PubliDisplay';
 import Contacto from '../../components/contacto/Contacto';
 import Footer from '../footer/Footer';
 import sr from './scrollReveal.js';
-
+import {NosotrosDisplay} from './NosotrosDisplay';
 import {SlideDisplay} from './SlideDisplay';
+import {RelevantesDisplay} from './RelevantesDisplay';
+import {HistoryDisplay} from './HistoryDisplay';
+import {SendDisplay} from './SendDisplay';
 
 class HomeDisplay extends Component {
     componentDidMount () {
         window.scroll(0, 0)
         const config = {
             origin: 'right',
-            duration: 1000,
+            duration: 2000,
             delay: 150,
             distance: '100%',
             scale: 1,
@@ -32,16 +35,16 @@ class HomeDisplay extends Component {
         }
         const config3 = {
             origin: 'bottom',
-            duration: 800,
-            delay: 100,
+            duration: 1000,
+            delay: 150,
             distance: '100%',
             scale: 1,
             easing: 'ease',
         }
         const config4 = {
             origin: 'top',
-            duration: 800,
-            delay: 100,
+            duration: 1000,
+            delay: 150,
             distance: '100%',
             scale: 1,
             easing: 'ease',
@@ -60,12 +63,11 @@ class HomeDisplay extends Component {
     return (
             <div>
               <SlideDisplay />
-                <Nav />
-                <AboutDisplay />
-                <Product />
-                <PubliDisplay />
-                <Contacto />
-                <Footer />
+                <HistoryDisplay />
+                <NosotrosDisplay />
+                <RelevantesDisplay />
+                <SendDisplay/>
+                <PubliDisplay/>
             </div>
         );
     }

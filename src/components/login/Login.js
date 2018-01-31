@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import {LoginDisplay} from './LoginDisplay';
-import {Registro} from './Registro'
+import {RegisterDisplay} from './RegisterDisplay';
 import './Login.css';
 import firebase from '../../firebase';
+//redux
+import {connect} from 'react-redux';
+import {loginAction} from '../../redux/actions/userAction';
 
-class LoginContainer extends Component {
+
+const codigos = {
+    "auth/wrong-password":"Tu contraseña es incorrecta",
+    "auth/email-already-in-use":"Este usuario ya esta registrado"
+};
+
+class Login extends Component {
     state= {
         mostrar:false,
         login:{
@@ -21,12 +30,28 @@ class LoginContainer extends Component {
 
     };
 
+    // componentWillMount(){
+    //     const user = localStorage.getItem("user");
+    //     if(user){
+    //         this.props.history.push("/perfil");
+    //     }
+    // };
+    componentDidMount () {
+        window.scroll(0, 0)
+    }
+
     componentWillMount(){
-        const user = localStorage.getItem("user");
-        if(user){
-            this.props.history.push("/perfil");
-        }
-    };
+        firebase.auth().getRedirectResult()
+        .then(result=> {
+            if(!result.user) return;
+            console.log(result.user);
+            localStorage.setItem("user",JSON.stringify(result.user));
+            this.props.loginAction(result.user);
+            this.props.history.push("/");
+        }).catch(function(error) {
+            // console.log(error)
+        });
+    }
 
     toggleMostrar = () => {
         this.setState({mostrar:!this.state.mostrar});
@@ -46,11 +71,13 @@ class LoginContainer extends Component {
         const nuevoRegistro = this.state.nuevoRegistro;
         nuevoRegistro[input] = value;
         this.setState({nuevoRegistro});
+
         // console.log(login);
         if(nuevoRegistro.pass !== nuevoRegistro.pass2)
             this.setState({error:"tu contrasena no coincide"});
         else
             this.setState({error:null});
+
     };
 
     onLogin = (e) => {
@@ -61,12 +88,23 @@ class LoginContainer extends Component {
             .then(usuario=>{
                 let user = JSON.stringify(usuario);
                 localStorage.setItem("user", user);
+                this.props.loginAction(user);
                 this.props.history.push("/perfil");
             })
-            .catch(e=>console.log(e));
+            .catch(e=>{
+                // console.log(e);
+                alert(codigos[e.code] );
+            });
 
+    };
+    loginGoogle = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithRedirect(provider);
+    };
+    loginFacebook = () => {
+        const provider = new firebase.auth.FacebookAuthProvider();
+        firebase.auth().signInWithRedirect(provider);
     }
-
 
     changeRegistro = () => {
         this.setState({registro:true});
@@ -80,14 +118,18 @@ class LoginContainer extends Component {
             .then(s=>{
                 this.setState({registro:false});
             })
-            .catch(e=>console.log(e));
+            .catch(e=>
+            {
+                // console.log(e);
+                alert(codigos[e.code] );
+            });
     };
     render() {
         const {registro, nuevoRegistro} = this.state;
         return (
             <div>
                 {registro ?
-                    <Registro
+                    <RegisterDisplay
                         toggleMostrar = {this.toggleMostrar}
                         mostrar={this.state.mostrar}
                         saveRegistro = {this.saveRegistro}
@@ -97,6 +139,8 @@ class LoginContainer extends Component {
                     />
                     :
                     <LoginDisplay
+                        loginFacebook={this.loginFacebook}
+                        loginGoogle={this.loginGoogle}
                         changeRegistro={this.changeRegistro}
                         mostrar={this.state.mostrar}
                         toggleMostrar = {this.toggleMostrar}
@@ -113,4 +157,11 @@ class LoginContainer extends Component {
     }
 }
 
-export default LoginContainer;
+function mapStateToProps(state, ownProps){
+    console.log(state);
+    return {
+        user:state.user.userObject
+    }
+}
+
+export default Login = connect(mapStateToProps, {loginAction})(Login);

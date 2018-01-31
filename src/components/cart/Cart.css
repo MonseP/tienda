@@ -1,10 +1,11 @@
 .cart{
+    width:240px;
+    min-width:200px;
 
-    width:200px;
     min-height: 229px;
     max-height:230px;
-    flex-grow: 1;
-    margin: 10px 20px;
+    /*flex-grow: 1;*/
+    margin: 10px 20px 30px 20px;
     text-align: center;
     padding-bottom: 20px;
 

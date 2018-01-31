@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../nav/Nav';
 import User from './User.js';
 import PerfilPersonal from './PerfilPersonal.js';
 import TabsMenu from './TabsMenu.js';
@@ -12,32 +11,28 @@ class Perfil extends React.Component {
   render() {
     return (
 
-
       <div>
 
 
-<Nav/>
 
       <div >
 
 <div  className="perfil-completo" style={{background: '#ECECEC'}}>
           <User/>
+          <PerfilPersonal/>
 
-
-
-
-      <PerfilPersonal/>
-
-
-    <TabsMenu/>
+            <TabsMenu/>
 
 
 </div>
 
+
+
 <Footer/>
 
       </div>
-       </div>
+          </div>
+
     );
   }
 }

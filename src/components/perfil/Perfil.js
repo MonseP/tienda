@@ -14,23 +14,20 @@ class Perfil extends React.Component {
       <div>
 
 
-<Nav/>
-
-      <div >
 
 
           <User/>
 
 
 
-<div  className="perfil-completo" style={{background: '#ECECEC'}}>
-      <PerfilPersonal/>
+        <div  className="perfil-completo" style={{background: '#ECECEC'}}>
+              <PerfilPersonal/>
 
 
-      <TabsMenu/>
+              <TabsMenu/>
 
 
-</div>
+        </div>
 
 <Footer/>
 

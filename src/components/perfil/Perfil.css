@@ -5,8 +5,11 @@
 flex-direction: row;
 justify-content: flex-start;
   flex-wrap: wrap;
+}
 
-
+#line{
+color:#e5e6e6;
+opacity: 0.4;
 }
 
 .avatar-user{
@@ -49,105 +52,6 @@ top:140px;
    top: 10%;
 }
 
-/* form-direccion   */
-.form-direccion{
-  width: %;
-  height:380px;
-}
-.form-perfil-direccion-titulo h3{
-font-family: 'Montserrat', sans-serif;
-font-size: 16px;
-text-align: center;
-margin-bottom: 10px;
-}
-.form-perfil-direccion{
-font-family: 'Montserrat', sans-serif;
-margin-bottom:10px;
-right: 10%;
-padding-left: 50px;
-  border-radius: 5px;
-  position: relative;
- text-align: left;
- font-weight:bold;
- background-covlor: white;
-
-}
-
-
-.form-perfil-direccion input[type=text] {
-
-  width:60%;
-  height: 9%;d
-  position: relative;
-  left: 20%;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 2px 0;
-  border: 1px solid #aec6ca;
-  outline: none;
-
-
-}
-.form-perfil-direccion  input[type=text]:focus {
-    border: 2px solid #77c1f6;
-}
-
-
-.form-perfil-direccion input[type=number] {
-    width: 45%;
-    height: 9%;
-    position: relative;
-    left: 20%;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 2px 0;
-    border: 1px solid #aec6ca;
-    outline: none;
-
-}
-.form-perfil-direccion input[type=number]:focus {
-    border: 2px solid #77c1f6;
-}
-
-
-
-.form-perfil-direccion button {
-  position: relative;
-  left: 15%;
-  top:-4px;
-  width: 50%;
-  background-color: #616161;
-  border-radius: 0;
-  border: transparent;
-  color: white;
-  padding: 3px 6px;
-}
-
-.form-perfil-direccion  button:hover {
-  color: #ffffff;
-  box-shadow: inset 0 0 0 3px #ffffff;
-
-}
-
-
-.form-perfil-direccion button:before {
- content:'';
- position: absolute;
- top: 0px;
- left: 0px;
- wicfdth: 0px;
- height: 35px;
- background: rgba(255,255,255,0.3);
- border-radius: 5px;
- transition: all 2s ease;
-}
-
-.fobrm-perfil-direccion button:hover:before{
- width: 100%;
-
-}
-
-
 /* tabla de ant:  */
 .custom-filter-dropdown {
 
@@ -179,6 +83,7 @@ width: 60%;
 margin-top: 28px;
 margin-left: 10px;
 margin-bottom: 20px;
+background: white;
 
 }
 

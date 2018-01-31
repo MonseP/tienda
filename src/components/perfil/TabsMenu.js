@@ -26,7 +26,7 @@ class TabsMenu extends React.Component {
             <div >
                   <Tabs defaultActiveKey="1" onChange={callback}>
                       <TabPane tab="Última orden" key="1"> <Compra/> </TabPane>
-                      <TabPane tab="Historial" key="3">Content of Tab Pane 3</TabPane>
+                      <TabPane tab="Historial" key="3"> <PerfilPedidos/> </TabPane>
                       <TabPane tab="Información de envío" key="2"><Direccion/> </TabPane>
 
                   </Tabs>

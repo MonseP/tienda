@@ -68,7 +68,7 @@ text-transform: capitalize;
   border-radius: 5px;
   padding: 5px 10px;
   margin: 2px 0;
-  border: 1px solid #aec6ca;
+  border: 1px solid #ccc;
   margin-top: 5px;
     margin-right:  5px;
     margin-left: 5px;
@@ -83,17 +83,32 @@ text-transform: capitalize;
 
 .flex-outer button {
   position: relative;
-  left: 15%;
-  top:-4px;
-  width: 50%;
-  background-color: #616161;
-  border-radius: 0;
-  border: transparent;
-  color: white;
-  padding: 3px 6px;
+left: 40%;
+margin-bottom: 10px;
+  width: 150px;
+margin-top:5px;
+color: #323232;
+background-color: transparent;
+border: 1px solid #AAA;
+padding: .8rem 2.5rem;
+font-weight: 700;
+font-size: .7rem;
+text-transform: uppercase;
+letter-spacing: .1rem;
+-webkit-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
 }
 .flex-outer button:hover {
-background: #808786;
+background: #456D56;
+color: white;
+font-weight: 700;
+font-size: .7rem;
+text-transform: uppercase;
+letter-spacing: .1rem;
+-webkit-transition: all 1s ease;
+-o-transition: all 1s ease;
+transition: all 1s ease;
 
 }
 

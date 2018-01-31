@@ -45,11 +45,6 @@ border-color: white;
 }
 
 
-left: 10%;
-     top:60px;
-     overflow:hidden;
-}
-
 .avatar:hover {
 -webkit-transform:scale(1.3);transform:scale(1.3);
 }
@@ -204,28 +199,28 @@ width: 600px;
 
 
 @media screen and (max-width: 420px) {
-.tabs   {
-  position: relative;
-  top:35px;
-  left: 15%;
-justify-content: center;
-width: 250px;
+    .tabs {
+        position: relative;
+        top: 35px;
+        left: 15%;
+        justify-content: center;
+        width: 250px;
 
+    }
+
+    .form-perfil-direccion {
+        height: -2px;
+
+    }
+
+    .form-perfil-direccion label {
+        placeholder: none;
+
+    }
+
+    .form-perfil-direccion button {
+        height: 50px;
+        width: 50px;
+        font-size: 10px;
+    }
 }
-
-.form-perfil-direccion  {
-  height: -2px;
-
-
-
-}
-.form-perfil-direccion label {
-placeholder:none;
-
-
-
-}
-.form-perfil-direccion button {
-  height: 50px;
-  width: 50px;
-  font-size: 10px;

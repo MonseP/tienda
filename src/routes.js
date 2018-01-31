@@ -10,6 +10,7 @@ import CarritoHome from './components/carrito/CarritoHome';
 import Perfil from './components/perfil/Perfil';
 import Editar from './components/perfil/EditarDatos/Editar';
 import Politicas from './components/footer/Politicas';
+import FormasPago from './components/footer/FormasPago';
 
 export const Routes = () => (
     <Switch>
@@ -17,6 +18,7 @@ export const Routes = () => (
         <Route exact path="/catalogo" component={Product}/>
         <Route path="/login" component={Login}/>
         <Route path="/contacto" component={Contacto}/>
+            <Route path="/formas-de-pago" component={FormasPago}/>
         <Route path="/catalogo/:id" component={ProductDetail} />
         <Route path="/admin" component={Admin} />
         <Route exact path="/carrito" component={CarritoHome} />

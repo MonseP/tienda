@@ -18,7 +18,7 @@ export const SlideDisplay = () => {
                     <hr className="line_white right"/>
                     <p className="bot">PRODUCTOS INTELIGENTES PARA TU BIENESTAR</p>
                     <br/>
-                    <a href="#productos">
+                    <a href="#history">
                     <FontAwesome  className="fa_home top" name="chevron-down" />
                     </a>
                 </div>

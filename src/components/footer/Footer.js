@@ -19,14 +19,16 @@ class Footer extends Component {
                     <div>
                         <h4>Horario de atención</h4>
                         <hr className="line_green"/>
-                        <span> <FontAwesome name="clock-o"/>Lunes a sabádo</span>
+                        <span> <FontAwesome name="calendar"/>Lunes a sabádo</span>
                         <br/>
-                        <span>9:00 am a 6:00 pm </span>
+                        <span><FontAwesome name="clock-o"/>9:00 am a 6:00 pm </span>
                     </div>
                     <div>
                         <h4>Información</h4>
                         <hr className="line_green"/>
+                        <Link to="/formas-de-pago">
                         <span>Formas de Pago</span>
+                        </Link>
                         <br/>
                         <Link to="/politicas-de-privacidad">
                             <span>Politicas de Privacidad</span>
@@ -36,9 +38,15 @@ class Footer extends Component {
                         <h4>Conecta con nosotros</h4>
                         <hr className="line_green"/>
                         <div className="redes">
-                            <FontAwesome name="facebook-square"/>
-                            <FontAwesome name="twitter-square"/>
-                            <FontAwesome name="dribbble"/>
+                            <Link to="/" target="blank">
+                                <FontAwesome name="facebook-square" />
+                            </Link>
+                            <Link to="/" target="blank">
+                                <FontAwesome name="twitter-square"/>
+                            </Link>
+                            <Link to="/" target="blank">
+                                <FontAwesome name="instagram"/>
+                            </Link>
                         </div>
                     </div>
                 </div>

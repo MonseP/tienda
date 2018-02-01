@@ -11,6 +11,7 @@ import Perfil from './components/perfil/Perfil';
 import Editar from './components/perfil/EditarDatos/Editar';
 import Politicas from './components/footer/Politicas';
 import FormasPago from './components/footer/FormasPago';
+import BeeContainer from './components/miel/BeeContainer';
 
 export const Routes = () => (
     <Switch>
@@ -25,9 +26,7 @@ export const Routes = () => (
         <Route path="/perfil" component={Perfil} />
             <Route path="/politicas-de-privacidad" component={Politicas}/>
         <Route path="/editarperfil" component={Editar} />
-
-
-
+        <Route path="/bee-co" component={BeeContainer} />
         <Route render={() => <h2>En construcción</h2>} />
 
 

@@ -1,50 +1,10 @@
-.compra-actual{
-  margin: 0;
-  display: flex;
-flex-direction: row;
-justify-content: flex-start;
-  flex-wrap: wrap;
-font-family: 'Roboto', sans-serif;
+/* tabla de ant:  */
+
+.img{
+  width: 10px;
+  height: 10px;
 }
 
-.compra-actual img{
-  width: 150px;
-  height: 150px;
-  display: flex;
-flex-direction: row;
-justify-content: flex-start;
-position: relative;
-
-
-}
-.compra-actual img{
-  width: 150px;
-  height: 150px;
-  display: flex;
-flex-direction: row;
-justify-content: flex-start;
-position: relative;
-
-
-}
-
-
-
-.des{
-  font-size: 14px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: justify;
-  top: -70px;
-
-
-}
-
-#precio{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: relative;
-  left: 10px;
+.table-compra-actual{
+  max-width: 800px;
 }

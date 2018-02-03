@@ -3,7 +3,7 @@ import logo from '../../assets/tienda_logo_blanco.png';
 import FontAwesome from 'react-fontawesome';
 import {Link} from 'react-router-dom';
 import './Home.css';
-import video from '../../assets/Waterfall.mp4';
+import video from '../../assets/Lake.mp4';
 import { Parallax } from 'react-scroll-parallax';
 
 

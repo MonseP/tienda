@@ -12,22 +12,17 @@ class Perfil extends React.Component {
 
       <div>
 
-
-
       <div >
-
 <div  className="perfil-completo" style={{background: 'white'}}>
           <User/>
           <PerfilPersonal/>
 
             <TabsMenu/>
 
-
 </div>
 
 
 <hr id="line"/>
-
 
 
 

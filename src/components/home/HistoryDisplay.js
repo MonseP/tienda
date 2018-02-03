@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
 import { Parallax } from 'react-scroll-parallax';
-import logo_azul from '../../assets/logo_prana_verde.png';
+import logo_azul from '../../assets/logo_prana_azul.png';
 
 export const HistoryDisplay = () => {
 
     return (
-        <div className="history">
+        <div id="history" className="history">
 
-                <div className="" style={{display:"flex", marginBottom:"100px"}}>
+                <div className="" style={{display:"flex", marginBottom:"50px", marginTop:"50px"}}>
                     <Parallax
                         className="custom-class"
                         offsetXMax={40}

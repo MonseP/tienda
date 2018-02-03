@@ -37,22 +37,24 @@ export const SendDisplay = () => {
             >
             <div className="process">
                 <div className="uno">
-                    <FontAwesome name="paper-plane" size="2x" />
+                    <FontAwesome name="calendar" size="2x" />
                     <br/>
-                    <h3>Envío gratuito</h3>
-                    <p>Más de $1,000.00</p>
+                    <h3>Envíos nacionales</h3>
+                    <p>De 3 a 5 días hábiles</p>
                 </div>
                 <div className="dos">
-                    <FontAwesome name="paper-plane" size="2x" />
+                    <FontAwesome name="credit-card" size="2x" />
                     <br/>
-                    <h3>Envío gratuito</h3>
-                    <p>Más de $1,000.00</p>
+                    <h3>Costos de envío</h3>
+                    <p>Calculalo con tu
+                        <br/>
+                    código postal</p>
                 </div>
                 <div className="tres">
                     <FontAwesome name="paper-plane" size="2x" />
                     <br/>
                     <h3>Envío gratuito</h3>
-                    <p>Más de $1,000.00</p>
+                    <p>Más de $2,000.00</p>
                 </div>
             </div>
             </Parallax>

@@ -2,7 +2,7 @@
 .slide{
     width: 100%;
     padding-bottom: 110px;
-    height:auto;
+    height:100vh;
 }
 #bg-video{
     position: fixed;
@@ -10,7 +10,7 @@
     left:0;
     margin: 0;
     min-width: 100%;
-    min-height:120%;
+    height:120%;
     z-index: -1000;
 }
 .cover{
@@ -79,12 +79,14 @@ a{
     font-size: 3.5rem;
     line-height: 2.7rem;
     margin-bottom: 30px;
+    color:rgba(0,0,0,.85)
 
 }
 .nos_text p{
     font-size: 1.4rem;
     line-height: 1.8rem;
     margin-bottom: 2.5rem;
+    color:rgba(0,0,0,.65)
 }
 .btn_explore{
     color: #323232;
@@ -96,6 +98,12 @@ a{
     font-size: .7rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
+    transition: all 1s ease;
+}
+.btn_explore:hover{
+    background-color: #1C7E7A;
+    color:white;
+    border:1px solid #1C7E7A;
 }
 /*Relevantes*/
 
@@ -157,10 +165,15 @@ a{
     background-color: #fff;
     text-align: left;
     z-index: 999;
-}
-.card_history{
     line-height: 1.5;
     font-size: 15px;
+
+}
+.card_history h3{
+    color:rgba(0,0,0,.85)
+}
+.card_history p{
+    color:rgba(0,0,0,.65)
 }
 .coffe_img{
     width:600px;
@@ -288,28 +301,53 @@ a{
 
 /*Publi*/
 .publi{
-    background-image: url('../../assets/herbal-2562218__480.jpg');
+    background-image: url('https://images.pexels.com/photos/414115/pexels-photo-414115.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
     height:270px;
     width:100%;
     text-align: center;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 .publi ::placeholder { color: white; }
+
 .publi h3{
     color:white;
-    font-size: 200%;
-
+    font-size: 350%;
+    margin: 0;
+}
+.publi p {
+    color:white;
+    font-size: 120%;
     margin: 0;
 }
 .box_publi{
-
     background-color: white;
 }
+.btn_mas{
+     color: white;
+     background-color: transparent;
+     border: 1px solid white;
+     padding: .5rem 1.5rem;
+     cursor: pointer;
+     font-weight: 700;
+     font-size: .5rem;
+     text-transform: uppercase;
+     letter-spacing: .1rem;
+     transition: all 1s ease;
+    outline: none;
+    margin: 20px;
+ }
+.btn_mas:hover{
+    background-color: white;
+    color:#323232;
+}
+
 .div_input{
     color:white;
     width:160px;

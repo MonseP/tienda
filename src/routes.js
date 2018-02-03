@@ -12,6 +12,7 @@ import DireccionPago from './components/carro/direccion/DireccionPago';
 import Perfil from './components/perfil/Perfil';
 import Politicas from './components/footer/Politicas';
 import FormasPago from './components/footer/FormasPago';
+import BeeContainer from './components/miel/BeeContainer';
 
 export const Routes = () => (
     <Switch>
@@ -26,11 +27,10 @@ export const Routes = () => (
         <Route path="/direccion" component={DireccionPago} />
         <Route path="/checkout" component={Pago} />
         <Route path="/perfil" component={Perfil} />
+       <Route path="/politicas-de-privacidad" component={Politicas}/>
         <Route path="/politicas-de-privacidad" component={Politicas}/>
-
-
-
-
+        <Route path="/editarperfil" component={Editar} />
+        <Route path="/bee-co" component={BeeContainer} />
         <Route render={() => <h2>En construcción</h2>} />
 
 

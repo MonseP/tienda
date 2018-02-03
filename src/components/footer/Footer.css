@@ -3,10 +3,16 @@
     width:100%;
     height:auto;
     padding-bottom: 30px;
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 
+}
+.footer a{
+    color:inherit;
+}
+.footer a:hover{
+    color:inherit;
 }
 .box_footer{
     display: flex;
@@ -30,11 +36,12 @@
     width:60px;
     height:2px;
     border: none;
-    background-color: #456D56;
+    background-color: #1C7E7A;
 }
 .redes span{
     margin: 0 10px;
-    font-size: 22px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .footer_section p{

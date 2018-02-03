@@ -3,6 +3,7 @@ import './Nav.css';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/tienda_logo_blanco.png';
 import user from '../../assets/user.png';
+import FontAwesome from 'react-fontawesome';
 
 export const NavDisplay = ({isLogged, signOut, photoURL}) => {
 
@@ -21,6 +22,9 @@ export const NavDisplay = ({isLogged, signOut, photoURL}) => {
                 </Link>
                 <Link to="/contacto">
                     <span className="less">Contacto</span>
+                </Link>
+                <Link to="/">
+                    <span style={{color:"white"}}><FontAwesome name="shopping-cart" size="2x"/></span>
                 </Link>
                 <hr className="divider"/>
 

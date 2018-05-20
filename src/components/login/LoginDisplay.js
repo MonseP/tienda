@@ -1,13 +1,10 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
-import Nav from '../nav/Nav';
 import './Login.css';
 
-export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error, changeRegistro}) => (
-            <div className="login">
-                <div className="box_navbar" style={{color:"black"}}>
-                    <Nav />
-                </div>
+export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error, changeRegistro, loginGoogle, loginFacebook}) => (
+    <div className="login">
+
                 <div className="card_login">
                     <h3>Iniciar sesión</h3>
                     <h1>{error}</h1>
@@ -31,8 +28,9 @@ export const LoginDisplay = ({mostrar, toggleMostrar, saveInput, onSubmit, error
                             <button type="submit" className="btn_login">Iniciar sesión</button>
                         </form>
                     </div>
-                    <p className="ayuda"><a onClick={changeRegistro} href="#!">Crea una cuenta</a></p>
+                    <p className="ayuda"><a onClick={changeRegistro} href="#!">Crear una cuenta</a></p>
 
                 </div>
-            </div>
-        );
+                </div>
+
+);

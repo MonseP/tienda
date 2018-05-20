@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Admin.css';
+import Boton from './Boton.js';
+import {Link, NavLink} from 'react-router-dom';
 import { Tabs } from 'antd';
 import { Modal, Button } from 'antd';
 import { Table } from 'antd';
@@ -8,6 +10,7 @@ import toastr from 'toastr';
 import FontAwesome from 'react-fontawesome';
 import ProductForm from './ProductForm';
 
+
 const TabPane = Tabs.TabPane;
 function callback(key) {
     console.log(key);
@@ -15,7 +18,11 @@ function callback(key) {
 const { Column } = Table;
 
 
+
 class AdminDisplay extends Component {
+
+
+
 
     state = {
         file:null,
@@ -125,25 +132,40 @@ class AdminDisplay extends Component {
 
 
     render() {
+
+
         const {products, errors} = this.state;
-
-
 
     return (
         <div className="admin">
                 <h2>Panel de Administrador</h2>
-                <div className=" panel_admin">
+                <div className="panel_admin">
 
                         <Tabs defaultActiveKey="1" onChange={callback}>
                             <TabPane tab="Órdenes" key="1">
                                 <h3 className="tab_name">Órdenes</h3>
-                                <Table  dataSource={products}>
+                                <Table  dataSource={products} >
 
-                                    <Column
-                                        title="Nombre del Producto"
-                                        dataIndex="name"
+                                  <Column
+                                       render={(text, record) => (
+                                        <span>
+                                      <Boton/>
+
+                                        </span>
+                                                )}
+                                        />
+                                  <Column
+                                       title= "Nombre del producto"
+                                      dataIndex="name"
                                         key="name"
-                                    />
+                                        render={(text, record) => (
+                                        <span>
+                                        <a href="./">{record.name}</a>
+
+                                        </span>
+                                                )}
+                                        />
+
                                     <Column
                                         title="Etiqueta"
                                         dataIndex="info"
@@ -169,6 +191,7 @@ class AdminDisplay extends Component {
                                 <Table dataSource={products}>
 
                                         <Column
+
                                             title="Nombre del Producto"
                                             dataIndex="name"
                                             key="name"

@@ -26,10 +26,10 @@ export const Registro = ({mostrar, toggleMostrar, saveRegistro, onSubmit, error,
                             <p>Tu email</p>
                             <input className="input" name="email" type="text" value={email} onChange={saveRegistro} />
 
-                            <p>Tu contrasena</p>
+                            <p>Tu contraseña</p>
                             <input className="input" name="pass" value={pass} onChange={saveRegistro}  placeholder="Password" type={mostrar ? "text" : "password"}/>
 
-                            <p>Repite tu contrasena</p>
+                            <p>Confirmar contraseña</p>
                             <input className="input" name="pass2" placeholder="Repite password" onChange={saveRegistro} value={pass2} type={mostrar ? "text" : "password"} />
 
                             <span className="tog" htmlFor="">Mostrar <input className="mostrar" onClick={toggleMostrar} type="checkbox" value="Mostrar pass"/>
